@@ -6,9 +6,15 @@ Description:
 Version: 1.0
 */
 
-
-@bgColor: maroon;
+@import '../node_modules/reset-css/less/reset';
+@import "https://rsms.me/inter/inter.css";
+@import "../node_modules/@prorenata/style-config/less/typography";
 
 body {
-  background: @bgColor;
+  background: @color-s200;
+  font-family: Inter, sans-serif;
+  color: @color-dark100;
+}
+a {
+  color: @color-a900;
 }
