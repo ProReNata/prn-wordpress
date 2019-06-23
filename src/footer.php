@@ -9,7 +9,7 @@
 
 <hr />
 
-This is the footer tempalte (footer.php)!
+This is the footer template (footer.php)! Yes!!
 
 <?php wp_footer(); ?>
 

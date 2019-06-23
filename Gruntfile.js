@@ -7,8 +7,8 @@ module.exports = function(grunt) {
       dev: {
         bsFiles: {
           src : [
-            'prn-wp-theme/*.css',
-            'prn-wp-theme/*.php'
+            'build/*.css',
+            'build/*.php'
           ]
         },
         options: {
@@ -21,13 +21,20 @@ module.exports = function(grunt) {
         }
       }
     },
+    copy: {
+      main: {
+        files: [
+          {expand: true, cwd: 'src/', src: ['**/*.php'], dest: 'build/'},
+        ]
+      }
+    },
     less: {
       development: {
         options: {
           paths: ['src']
         },
         files: {
-          'prn-wp-theme/style.css': 'src/style.less'
+          'build/style.css': 'src/style.less'
         }
       },
       production: {
@@ -43,7 +50,7 @@ module.exports = function(grunt) {
           }
         },
         files: {
-          'prn-wp-theme/style.css': 'src/style.less'
+          'build/style.css': 'src/style.less'
         }
       }
     },
@@ -55,16 +62,24 @@ module.exports = function(grunt) {
           spawn: false,
         },
       },
+      php: {
+        files: ['src/**/*.php'],
+        tasks: ['copy'],
+        options: {
+          spawn: false,
+        },
+      }
     },
   });
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['browserSync', 'less:development', 'watch']);
-  grunt.registerTask('production', ['less:production']);
+  grunt.registerTask('default', ['browserSync', 'copy', 'less:development', 'watch']);
+  grunt.registerTask('production', ['copy', 'less:production']);
 
 };
