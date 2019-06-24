@@ -18,7 +18,9 @@
 <body>
 <div class="pure-g">
   <div class="pure-u-1-3 l-box">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo.svg" />
+    <h3 class="logo logo-a500"><?php bloginfo('name'); ?></h3>
+    <h3 class="logo logo-p500"><?php bloginfo('name'); ?></h3>
+    <h3 class="logo"><?php bloginfo('name'); ?></h3>
   </div>
   <div class="pure-u-2-3 l-box">
     <h2><?php bloginfo('description'); ?></h2>
