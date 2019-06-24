@@ -4,8 +4,6 @@
  *
  * Displays all of the <head> section
  *
- * @package WordPress
- * @subpackage themename
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -20,8 +18,7 @@
 <body>
 <div class="pure-g">
   <div class="pure-u-1-3 l-box">
-    <h3 class="logo"><?php bloginfo('name'); ?></h3>
-    <h1 class="logo">Prorenata</h1>
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo.svg" />
   </div>
   <div class="pure-u-2-3 l-box">
     <h2><?php bloginfo('description'); ?></h2>

@@ -22,9 +22,14 @@ module.exports = function(grunt) {
       }
     },
     copy: {
-      main: {
+      php: {
         files: [
           {expand: true, cwd: 'src/', src: ['**/*.php'], dest: 'build/'},
+        ]
+      },
+      assets: {
+        files: [
+          {expand: true, cwd: 'src/assets/', src: ['**/*.*'], dest: 'build/assets/'},
         ]
       }
     },
@@ -66,7 +71,14 @@ module.exports = function(grunt) {
       },
       php: {
         files: ['src/**/*.php'],
-        tasks: ['copy'],
+        tasks: ['copy:php'],
+        options: {
+          spawn: false,
+        },
+      },
+      assets: {
+        files: ['src/assets/**/*.*'],
+        tasks: ['copy:assets'],
         options: {
           spawn: false,
         },
