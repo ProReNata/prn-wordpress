@@ -17,17 +17,16 @@
 
 <body>
 <div class="pure-g">
-  <div class="pure-u-1-3 l-box">
-    <h3 class="logo logo-a500"><?php bloginfo('name'); ?></h3>
-    <h3 class="logo logo-p500"><?php bloginfo('name'); ?></h3>
+  <div class="pure-u-3-4 l-box">
     <h3 class="logo"><?php bloginfo('name'); ?></h3>
+    Meny Meny Meny
   </div>
-  <div class="pure-u-2-3 l-box">
-    <h2><?php bloginfo('description'); ?></h2>
+  <div class="pure-u-1-4 l-box">
+    Menu
   </div>
 </div>
 
-This is the header template (header.php):<br />
+This is the header template <span class="logo logo-dark">Prorenata</span> (header.php):<br />
 
 <?php wp_nav_menu(); ?>
 
