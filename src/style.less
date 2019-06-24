@@ -6,14 +6,25 @@ Description:
 Version: 1.0
 */
 
-@import '../node_modules/reset-css/less/reset';
 @import "https://rsms.me/inter/inter.css";
+@import (less) '../node_modules/purecss/build/base.css';
+@import (less) '../node_modules/purecss/build/grids.css';
+@import (less) '../node_modules/purecss/build/grids-responsive.css';
 @import "../node_modules/@prorenata/style-config/less/typography";
+
+// Grid Modifications
+
+.pure-g > div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.l-box {
+  padding: 1rem;
+}
 
 body {
   background: @color-s200;
-  font-family: Inter, sans-serif;
-  color: @color-dark100;
 }
 a {
   color: @color-a900;
