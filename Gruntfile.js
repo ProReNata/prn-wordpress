@@ -21,6 +21,11 @@ module.exports = function(grunt) {
         }
       }
     },
+    clean: {
+      php: ['build/*.php'],
+      assets: ['build/assets/'],
+      all: ['build/*']
+    },
     copy: {
       php: {
         files: [
@@ -71,14 +76,14 @@ module.exports = function(grunt) {
       },
       php: {
         files: ['src/**/*.php'],
-        tasks: ['copy:php'],
+        tasks: ['clean:php', 'copy:php'],
         options: {
           spawn: false,
         },
       },
       assets: {
         files: ['src/assets/**/*.*'],
-        tasks: ['copy:assets'],
+        tasks: ['clean:assets', 'copy:assets'],
         options: {
           spawn: false,
         },
@@ -88,12 +93,14 @@ module.exports = function(grunt) {
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['browserSync', 'copy', 'less:development', 'watch']);
-  grunt.registerTask('production', ['copy', 'less:production']);
+  grunt.registerTask('default', ['clean:all', 'browserSync', 'copy', 'less:development', 'watch']);
+  grunt.registerTask('production', ['clean:all', 'copy', 'less:production']);
+  grunt.registerTask('clearBuild', ['clean:all']);
 
 };
