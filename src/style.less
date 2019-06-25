@@ -15,20 +15,31 @@ Version: 1.0
 
 // Grid Modifications
 
+.pure-g {
+  width: 98vw;
+  max-width: 54rem;
+  margin: 0 auto;
+}
+
 .pure-g > div {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .l-box {
-  padding: 1rem;
+  padding: 1.5rem;
 }
+.pure-img {
+  margin: 0 auto;
+}
+
+@import "less/hide-show";
 
 html {
   background: @color-p500;
 }
 body {
-  background: @color-s200;
+  background: @color-s100;
 }
 a {
   color: @color-a900;
@@ -36,6 +47,12 @@ a {
 h1 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
+}
+h5 {
+  color: @color-p700;
+}
+.text-center {
+  text-align: center;
 }
 
 .leading {
@@ -124,21 +141,16 @@ nav {
 }
 
 .quote {
-  padding: 2.5rem 0;
+  padding: 1rem 0;
   background: @color-a500;
   blockquote {
     .leading;
     font-style: italic;
-    margin: 0 auto 2rem;
-    width: 80%;
-    max-width: 54rem;
+    margin: 0 0 2rem;
     text-align: center;
   }
   .quotee {
     text-align: center;
-    margin: 0 auto;
-    width: 80%;
-    max-width: 54rem;
     &-img {
       width: 4rem;
       height: auto;
@@ -150,11 +162,13 @@ nav {
 }
 
 .section {
-  padding: 4rem 0;
-  > p {
+  padding: 2.5rem 0;
+  div.leading {
     text-align: center;
+    max-width: 100%;
+  }
+  div[class*="pure-u"] {
     margin: 0 auto;
-    width: 80%;
-    max-width: 54rem;
+    max-width: 33em;
   }
 }
