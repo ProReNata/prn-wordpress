@@ -30,9 +30,30 @@ body {
 a {
   color: @color-a900;
 }
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
 
 @import "less/logo";
 
+.btn {
+  display: inline-block;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: @color-s900;
+  border: 1px solid @color-s500;
+  border-radius: .25rem;
+  background: @color-s200;
+  text-decoration: none;
+
+  &-primary {
+    color: @color-dark100;
+    background-color: @color-p500;
+    border-color: @color-p500;
+  }
+}
 
 nav {
   @navSize: 5rem;
@@ -63,9 +84,33 @@ nav {
   }
 }
 
-
 .hero {
   background-position: 50% 50%;
   background-size: cover;
-  height: calc(95vh - 5rem);
+  min-height: calc(95vh - 5rem);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: @color-light100;
+  &-content {
+    text-align: center;
+    width: 70vw;
+    min-width: 320px;
+    padding-top: 2rem;
+  }
+  h1 {
+    margin: 0 0 2rem;
+    letter-spacing: -.03em;
+    font-size: 10vw;
+    line-height: 8vw;
+  }
+  p {
+    margin: 0 auto 2rem;
+  }
+  &-leading {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
 }
