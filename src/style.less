@@ -20,7 +20,6 @@ Version: 1.0
   max-width: 54rem;
   margin: 0 auto;
 }
-
 .pure-g > div {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -51,8 +50,13 @@ h1 {
 h5 {
   color: @color-p700;
 }
-.text-center {
-  text-align: center;
+.strong {
+  font-weight: 700;
+}
+.bg {
+  &-a500 { background-color: @color-a500 }
+  &-s300 { background-color: @color-s300 }
+  &-s400 { background-color: @color-s400 }
 }
 
 .leading {
@@ -142,7 +146,6 @@ nav {
 
 .quote {
   padding: 1rem 0;
-  background: @color-a500;
   blockquote {
     .leading;
     font-style: italic;
@@ -170,5 +173,22 @@ nav {
   div[class*="pure-u"] {
     margin: 0 auto;
     max-width: 33em;
+  }
+}
+
+.modules {
+  background-color: @color-s300;
+}
+
+.img{
+  &-avatar {
+    width: 4rem;
+    height: auto;
+    border-radius: 4rem;
+    vertical-align: middle;
+    margin: 0 1rem;
+  }
+  &-circle {
+    border-radius: 999em;
   }
 }
