@@ -101,6 +101,5 @@ module.exports = function(grunt) {
   // Default task(s).
   grunt.registerTask('default', ['clean:all', 'browserSync', 'copy', 'less:development', 'watch']);
   grunt.registerTask('production', ['clean:all', 'copy', 'less:production']);
-  grunt.registerTask('clearBuild', ['clean:all']);
 
 };
