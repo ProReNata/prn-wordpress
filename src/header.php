@@ -16,18 +16,25 @@
 </head>
 
 <body>
-<div class="pure-g">
-  <div class="pure-u-3-4 l-box">
+<nav class="pure-g">
+  <div class="pure-u-3-4">
     <h3 class="logo"><?php bloginfo('name'); ?></h3>
-    Meny Meny Meny
+    <ul>
+      <li>Moduler</li>
+      <li>Utbildningar</li>
+      <li>Pris</li>
+      <li>Om oss</li>
+      <li>Jobb</li>
+    </ul>
   </div>
-  <div class="pure-u-1-4 l-box">
-    Menu
+  <div class="pure-u-1-4 text-right">
+    <ul>
+      <li>Support</li>
+      <li>Logga in</li>
+    </ul>
   </div>
-</div>
+</nav>
 
-This is the header template <span class="logo logo-dark">Prorenata</span> (header.php):<br />
-
-<?php wp_nav_menu(); ?>
+<?php // wp_nav_menu(); ?>
 
 <hr />
