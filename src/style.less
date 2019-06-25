@@ -24,6 +24,9 @@ Version: 1.0
   padding: 1rem;
 }
 
+html {
+  background: @color-p500;
+}
 body {
   background: @color-s200;
 }
@@ -33,6 +36,12 @@ a {
 h1 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
+}
+
+.leading {
+  font-size: 1.4125rem;
+  line-height: 2rem;
+  font-weight: 300;
 }
 
 @import "less/logo";
@@ -109,8 +118,43 @@ nav {
     margin: 0 auto 2rem;
   }
   &-leading {
-    font-size: 1.7rem;
-    line-height: 2rem;
+    .leading;
     font-weight: 700;
+  }
+}
+
+.quote {
+  padding: 2.5rem 0;
+  background: @color-a500;
+  blockquote {
+    .leading;
+    font-style: italic;
+    margin: 0 auto 2rem;
+    width: 80%;
+    max-width: 54rem;
+    text-align: center;
+  }
+  .quotee {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 54rem;
+    &-img {
+      width: 4rem;
+      height: auto;
+      border-radius: 4rem;
+      vertical-align: middle;
+      margin: 0 1rem;
+    }
+  }
+}
+
+.section {
+  padding: 4rem 0;
+  > p {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 54rem;
   }
 }

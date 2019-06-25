@@ -14,18 +14,15 @@ get_header(); ?>
 	</div>
 </div>
 
-<h3>This is the front page (front-page.php):</h3>
+<div class="quote">
+	<blockquote>”I mitt arbete som läkare har jag upplevt ett stort behov av ett enkelt, lättöverskådligt dokumentationssystem. Därför har vi skapat Prorenata Journal.”</blockquote>
+	<p class="quotee">Jens Alm, Grundare och VD <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/jens.jpg" class="quotee-img" /> Läs hela brevet från Jens -></p>
+</div>
 
-<?php while(have_posts()) : the_post(); ?>
 
-	title: <?php the_title(); ?><br />
-	ID: <?php the_ID(); ?><br />
-	time: <?php the_time(get_option('date_format')); ?><br />
-	excerpt: <?php the_excerpt(); ?><br />
-	link: <a href="<?php the_permalink(); ?>">link</a><br />
-	content: <?php the_content(); ?><br />
-	<hr />
 
-<?php endwhile; ?>
+<div class="section">
+	<p class="leading">Prorenata Journal är ett webbaserat dokumentationssystem med användarvänlig utformning framtaget för att passa alla verksamheter med behov av att föra journal på ett snabbt och säkert sätt.</p>
+</div>
 
 <?php get_footer(); ?>
