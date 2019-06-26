@@ -50,7 +50,7 @@ get_header(); ?>
 		<div class="pure-u-1-1 pure-u-md-5-12 l-box">
 			<h5>Fri support</h5>
 			<h4>Snabb & personlig support</h4>
-			<p>Vår support finns till för våra användare – därför är den alltid inkluderad i avtalet. Vi hjälper er varje vardag mellan kl 08-17. Vi är snabba och effektiva, därför ligger vi ofta på 100% kundnöjdhet. Det ska vara tryggt och enkelt att kontakta oss!</p>
+			<p>Vår support finns till för våra användare – därför är den alltid inkluderad i avtalet. Vi hjälper er varje vardag mellan kl&nbsp;08&nbsp;-&nbsp;17. Vi är snabba och effektiva, därför ligger vi ofta nära 100% kundnöjdhet. Det ska vara tryggt och enkelt att kontakta oss!</p>
 		</div>
 		<div class="pure-u-md-7-12 show-md text-center">
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/ill-support.svg" alt="" class="pure-img">
@@ -105,53 +105,53 @@ get_header(); ?>
 <div class="section text-center features">
 	<div class="pure-g">
 		<div class="pure-u-1-2 pure-u-sm-1-3 pure-u-md-1-4 l-box">
-			<p><i class="fal fa-search fa-3x"></i></p>
+			<p><i class="fal fa-search fa-2x"></i></p>
 			<p>Supersnabb sök</p>
 		</div>
 		<div class="pure-u-1-2 pure-u-sm-1-3 pure-u-md-1-4 l-box">
-			<p><i class="fal fa-certificate fa-3x"></i></p>
+			<p><i class="fal fa-certificate fa-2x"></i></p>
 			<p>CE-märkt</p>
 		</div>
 		<div class="pure-u-1-2 pure-u-sm-1-3 pure-u-md-1-4 l-box">
-			<p><i class="fal fa-key fa-3x"></i></p>
+			<p><i class="fal fa-key fa-2x"></i></p>
 			<p>Tvåfaktorsinloggning</p>
 		</div>
 		<div class="pure-u-1-2 pure-u-sm-1-3 pure-u-md-1-4 l-box">
-			<p><i class="fal fa-tablet fa-3x"></i></p>
+			<p><i class="fal fa-tablet fa-2x"></i></p>
 			<p>Fullt stöd för iPad</p>
 		</div>
 
 		<div class="pure-u-1-2 pure-u-sm-1-3 pure-u-md-1-4 l-box">
-			<p><i class="fal fa-chart-pie fa-3x"></i></p>
+			<p><i class="fal fa-chart-pie fa-2x"></i></p>
 			<p>Kraftfulla rapporter</p>
 		</div>
 		<div class="pure-u-1-2 pure-u-sm-1-3 pure-u-md-1-4 l-box">
-			<p><i class="fal fa-save fa-3x"></i></p>
+			<p><i class="fal fa-save fa-2x"></i></p>
 			<p>Automatisk säkerhetskopiering</p>
 		</div>
 		<div class="pure-u-1-2 pure-u-sm-1-3 pure-u-md-1-4 l-box">
-			<p><i class="fal fa-globe-europe fa-3x"></i></p>
+			<p><i class="fal fa-globe-europe fa-2x"></i></p>
 			<p>Tillgängligt överallt</p>
 		</div>
 		<div class="pure-u-1-2 pure-u-sm-1-3 pure-u-md-1-4 l-box">
-			<p><i class="fal fa-headset fa-3x"></i></p>
+			<p><i class="fal fa-headset fa-2x"></i></p>
 			<p>Lättilgänglig support</p>
 		</div>
 
 		<div class="pure-u-1-2 pure-u-sm-1-3 pure-u-md-1-4 l-box">
-			<p><i class="fal fa-users fa-3x"></i></p>
+			<p><i class="fal fa-users fa-2x"></i></p>
 			<p>Sekretess mellan yrkeskategorier</p>
 		</div>
 		<div class="pure-u-1-2 pure-u-sm-1-3 pure-u-md-1-4 l-box">
-			<p><i class="fal fa-reply fa-3x"></i></p>
+			<p><i class="fal fa-reply fa-2x"></i></p>
 			<p>Uppföljning av anteckning</p>
 		</div>
 		<div class="pure-u-1-2 pure-u-sm-1-3 pure-u-md-1-4 l-box">
-			<p><i class="fal fa-keyboard fa-3x"></i></p>
+			<p><i class="fal fa-keyboard fa-2x"></i></p>
 			<p>Enkel inmatning</p>
 		</div>
 		<div class="pure-u-1-2 pure-u-sm-1-3 pure-u-md-1-4 l-box">
-			<p><i class="fal fa-book fa-3x"></i></p>
+			<p><i class="fal fa-book fa-2x"></i></p>
 			<p>Fullständig historik</p>
 		</div>
 	</div>
