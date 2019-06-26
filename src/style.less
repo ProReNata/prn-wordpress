@@ -19,11 +19,14 @@ Version: 1.0
   width: 98vw;
   max-width: 54rem;
   margin: 0 auto;
-}
-.pure-g > div {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  [class*=pure-u] {
+    font-family: 'Inter', sans-serif;
+  }
 }
 .l-box {
   padding: 1.5rem;
@@ -178,6 +181,12 @@ nav {
 
 .modules {
   background-color: @color-s300;
+}
+.features {
+  padding: 5rem 0;
+  p:first-child {
+    color: @color-s500;
+  }
 }
 
 .img{

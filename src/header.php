@@ -11,6 +11,7 @@
 <meta charset="<?php bloginfo('charset'); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
+<script src="https://kit.fontawesome.com/89c5779e5f.js"></script>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
 <?php wp_head(); ?>
 </head>
