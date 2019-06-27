@@ -6,36 +6,15 @@ Description:
 Version: 1.0
 */
 
+
 @import "https://rsms.me/inter/inter.css";
-@import (less) '../node_modules/purecss/build/base.css';
-@import (less) '../node_modules/purecss/build/grids.css';
-@import (less) '../node_modules/purecss/build/grids-responsive.css';
 @import (less) "../node_modules/@prorenata/style-config/css/output.css";
 @import "../node_modules/@prorenata/style-config/less/typography";
 
-// Grid Modifications
-
-.pure-g {
-  width: 98vw;
-  max-width: 54rem;
-  margin: 0 auto;
-  > div {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  [class*=pure-u] {
-    font-family: 'Inter', sans-serif;
-  }
-}
-.l-box {
-  padding: 1.5rem;
-}
-.pure-img {
-  margin: 0 auto;
-}
-
+@import "less/grid";
 @import "less/hide-show";
+
+// Globals
 
 html {
   background: @color-p500;
@@ -64,146 +43,19 @@ h5 {
   &-s300 { background-color: @color-s300 }
   &-s400 { background-color: @color-s400 }
 }
-
 .leading {
   font-size: 1.4125rem;
   line-height: 2rem;
   font-weight: 300;
 }
-
+@import "less/btn";
 @import "less/logo";
+@import "less/navigation";
+@import "less/quote";
+@import "less/front-page";
 
-.btn {
-  display: inline-block;
-  padding: .5rem .75rem;
-  font-size: 1rem;
-  font-weight: 700;
-  color: @color-s900;
-  border: 1px solid @color-s500;
-  border-radius: .25rem;
-  background: @color-s200;
-  text-decoration: none;
 
-  &-primary {
-    color: @color-dark100;
-    background-color: @color-p500;
-    border-color: @color-p500;
-  }
-}
 
-nav {
-  @navSize: 5rem;
-  height: @navSize;
-  background: @color-s100;
-  .logo {
-    @logoSize: 2rem;
-    display: inline-block;
-    margin: 0;
-    font-size: @logoSize/1.2;
-    margin: (@navSize - @logoSize)/2 1rem;
-  }
-  ul {
-    vertical-align: top;
-    display: inline-block;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li {
-      display: inline-block;
-      padding: (@navSize - 1.5rem)/2 .75rem;
-      font-weight: 700;
-      color: @color-s800;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-}
-
-.hero {
-  background-position: 50% 50%;
-  background-size: cover;
-  min-height: calc(95vh - 5rem);
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: @color-light100;
-  &-content {
-    text-align: center;
-    width: 70vw;
-    min-width: 320px;
-    padding-top: 2rem;
-  }
-  h1 {
-    margin: 0 0 2rem;
-    letter-spacing: -.03em;
-    font-size: 10vw;
-    line-height: 8vw;
-  }
-  p {
-    margin: 0 auto 2rem;
-  }
-  &-leading {
-    .leading;
-    font-weight: 700;
-  }
-}
-
-.quote {
-  padding: 1rem 0;
-  blockquote {
-    .leading;
-    font-style: italic;
-    margin: 0 0 2rem;
-    text-align: center;
-  }
-  .quotee {
-    text-align: center;
-    &-img {
-      width: 4rem;
-      height: auto;
-      border-radius: 4rem;
-      vertical-align: middle;
-      margin: 0 1rem;
-    }
-  }
-}
-
-.section {
-  padding: 2.5rem 0;
-  div.leading {
-    text-align: center;
-    max-width: 100%;
-  }
-  div[class*="pure-u"] {
-    margin: 0 auto;
-    max-width: 33em;
-  }
-}
-
-.modules {
-  background-color: @color-s300;
-}
-.features {
-  padding: 5rem 0;
-  p:first-child {
-    color: @color-s500;
-  }
-}
-
-.img{
-  &-avatar {
-    width: 4rem;
-    height: auto;
-    border-radius: 4rem;
-    vertical-align: middle;
-    margin: 0 1rem;
-  }
-  &-circle {
-    border-radius: 999em;
-  }
-}
 
 footer {
   padding: 2rem 0 3rem;

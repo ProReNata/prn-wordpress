@@ -1,0 +1,28 @@
+nav {
+  @navSize: 5rem;
+  height: @navSize;
+  background: @color-s100;
+  .logo {
+    @logoSize: 2rem;
+    display: inline-block;
+    margin: 0;
+    font-size: @logoSize/1.2;
+    margin: (@navSize - @logoSize)/2 1rem;
+  }
+  ul {
+    vertical-align: top;
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      padding: (@navSize - 1.5rem)/2 .75rem;
+      font-weight: 700;
+      color: @color-s800;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
