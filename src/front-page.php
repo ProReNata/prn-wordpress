@@ -161,7 +161,7 @@ get_header(); ?>
 		</div>
 		<div class="pure-u-1-2 pure-u-sm-1-3 pure-u-md-1-4 l-box">
 			<p><i class="fal fa-headset fa-2x"></i></p>
-			<p>Lättilgänglig support</p>
+			<p>Superb support</p>
 		</div>
 
 		<div class="pure-u-1-2 pure-u-sm-1-3 pure-u-md-1-4 l-box">
@@ -170,7 +170,7 @@ get_header(); ?>
 		</div>
 		<div class="pure-u-1-2 pure-u-sm-1-3 pure-u-md-1-4 l-box">
 			<p><i class="fal fa-reply fa-2x"></i></p>
-			<p>Uppföljning av anteckning</p>
+			<p>Uppföljning av anteckningar</p>
 		</div>
 		<div class="pure-u-1-2 pure-u-sm-1-3 pure-u-md-1-4 l-box">
 			<p><i class="fal fa-keyboard fa-2x"></i></p>
