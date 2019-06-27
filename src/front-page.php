@@ -19,13 +19,11 @@ get_header(); ?>
 	<div class="pure-g">
 		<div class="pure-u-1-1">
 			<blockquote>”I mitt arbete som läkare har jag upplevt ett stort behov av ett enkelt, lättöverskådligt dokumentationssystem. Därför har vi skapat Prorenata Journal.”</blockquote>
-		</div>
-		<div class="pure-u-5-12 text-right">
-			Jens Alm, Grundare och VD
-		</div>
-		<div class="pure-u-1-6 text-center"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/jens.jpg" class="quotee-img" /></div>
-		<div class="pure-u-5-12">
-			Läs hela brevet från Jens ->
+			<div class="quotee">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/jens.jpg" class="quotee-img" />
+				<div class="quotee-line-1">Jens Alm, Grundare och VD</div>
+				<div class="quotee-line-2">Läs hela brevet från Jens -></div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -93,13 +91,11 @@ get_header(); ?>
 	<div class="pure-g">
 		<div class="pure-u-1-1">
 			<blockquote>”Övergången från tidigare journalsystem har känts trygg tack vare bra support och mycket stöd från personal på Prorenata.”</blockquote>
-		</div>
-		<div class="pure-u-5-12 text-right">
-			Anna Jansson, skolsköterska
-		</div>
-		<div class="pure-u-1-6 text-center"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/annajansson.png" class="quotee-img" /></div>
-		<div class="pure-u-5-12">
-			Internationella Engelska Skolan
+			<div class="quotee">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/annajansson.png" class="quotee-img" />
+				<div class="quotee-line-1">Anna Jansson, skolsköterska</div>
+				<div class="quotee-line-2">Internationella Engelska Skolan</div>
+			</div>
 		</div>
 	</div>
 </div>
