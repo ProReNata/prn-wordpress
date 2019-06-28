@@ -14,6 +14,25 @@ get_header(); ?>
 	</div>
 </div>
 
+<div class="section">
+	<div class="refs">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/umea.png" class="refs-logo" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/fria.png" class="refs-logo" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/kry.svg" class="refs-logo" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/eslov.svg" class="refs-logo" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/jensen.png" class="refs-logo" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/taby.png" class="refs-logo" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/frida.png" class="refs-logo" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/vaxholm.png" class="refs-logo" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/helsingborg.png" class="refs-logo" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/sollentuna.png" class="refs-logo" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/knodd.png" class="refs-logo" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/uddevalla.png" class="refs-logo" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/danderyd.png" class="refs-logo" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/helsingborg.png" class="refs-logo" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/spsm.png" class="refs-logo" />
+	</div>
+</div>
 
 <div class="section bg-a500">
 	<div class="pure-g">
