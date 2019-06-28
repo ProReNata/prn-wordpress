@@ -99,10 +99,10 @@ function register_acf_block_types()
 
     // Small highligts block
     acf_register_block_type(array(
-        'name'              => 'sm_highlights',
+        'name'              => 'highlights_sm',
         'title'             => __('Small highligts'),
         'description'       => __('Some icons with highlights'),
-        'render_template'   => 'blocks/sm_highlights.php',
+        'render_template'   => 'blocks/highlights_sm.php',
         'category'          => 'front-page',
         'icon'              => 'awards',
         // 'keywords'          => array( 'hero', 'front-page' ),

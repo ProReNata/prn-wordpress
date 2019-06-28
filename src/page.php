@@ -14,9 +14,7 @@ get_header(); ?>
 
 <?php while(have_posts()) : the_post(); ?>
 
-	title: <?php the_title(); ?><br />
-	ID: <?php the_ID(); ?><br />
-	content: <?php the_content(); ?><br />
+	<?php the_content(); ?>
 
 <?php endwhile; ?>
 
