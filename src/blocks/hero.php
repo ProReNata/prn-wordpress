@@ -26,7 +26,7 @@ $description = get_field('description') ?: 'Description goes here';
 $image = get_field('background_img') ?: null;
 
 ?>
-<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/assets/hero.jpg);">
+<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>" style="background-image:url(<?php echo $image[url]; ?>);">
   <div class="hero-content">
 		<h1><?php echo $title; ?></h1>
 		<p class="hero-leading"><?php echo $description; ?></p>
