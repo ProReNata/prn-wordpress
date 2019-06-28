@@ -9,7 +9,7 @@ get_header(); ?>
 <div class="hero" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/assets/hero.jpg);">
 	<div class="hero-content">
 		<h1>Älska ditt journalsystem</h1>
-		<p class="hero-leading">Prorenata är Sveriges mest omtycka journalsystem för medicinsk elevhälsa</p>
+		<p class="hero-leading">Prorenata är Sveriges mest omtyckta journalsystem för medicinsk elevhälsa</p>
 		<p><a href="#" class="btn btn-primary">Boka en demo</a></p>
 	</div>
 </div>

@@ -14,6 +14,8 @@ Run `grunt` to start the file watcher and browser sync.
 
 Follow the instructions in the Wordpress setup.
 
+Install the PRO-version of [Advanced Custom Fields PRO](https://github.com/wp-premium/advanced-custom-fields-pro). License key can be found in 1Password and should be inserted under _Egna fält > Uppdateringar_ in the admin panel.
+
 # Start dev env.
 
 Run `docker-compose up -d` to launch the MySQL and Wordpress Docker images.
