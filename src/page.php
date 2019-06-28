@@ -12,8 +12,6 @@
  */
 get_header(); ?>
 
-<h3>This is a page (page.php):</h3>
-
 <?php while(have_posts()) : the_post(); ?>
 
 	title: <?php the_title(); ?><br />

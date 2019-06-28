@@ -35,3 +35,4 @@ Shut down the docker images with `docker-compose down`
 - [ ] Navigation
 - [ ] Gutenberg
 - [ ] Speed optimization
+- [ ] Include ACF into theme. [Read more here.](https://www.advancedcustomfields.com/resources/including-acf-within-a-plugin-or-theme/)
