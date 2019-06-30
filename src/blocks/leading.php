@@ -1,7 +1,13 @@
+<?php
+
+// Load values and assing defaults.
+$text = get_field('text') ?: 'Text goes here';
+?>
+
 <div class="section">
 	<div class="pure-g">
 		<div class="pure-u-1-1 l-box leading">
-			Prorenata Journal är ett webbaserat dokumentationssystem med användarvänlig utformning framtaget för att passa alla verksamheter med behov av att föra journal på ett snabbt och säkert sätt.
+			<?php echo $text; ?>
 		</div>
 	</div>
 </div>
