@@ -32,6 +32,7 @@ Shut down the docker images with `docker-compose down`
 - [ ] Modules overview page
 - [ ] Modules single page
 - [ ] Add ACF and hook everything into it
+- [ ] Background color on quote-block
 - [ ] Navigation
 - [ ] Gutenberg
 - [ ] Speed optimization
