@@ -1,6 +1,5 @@
 <?php
 
-
 // Load values and assing defaults.
 $quote = get_field('quote') ?: 'xxx';
 $quotee_line_1 = get_field('quotee_line_1') ?: 'xxx';
