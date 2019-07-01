@@ -1,5 +1,7 @@
 <?php
 
+include 'acf-export.php';
+
 function register_acf_block_types()
 {
     function my_plugin_block_categories($categories, $post)
