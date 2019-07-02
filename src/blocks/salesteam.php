@@ -23,7 +23,7 @@
 					?>
 
 					<div class="pure-u-1-5">
-						<img src="<?php echo $image[url]; ?>" class="img-circle img-avatar" />
+						<img src="<?php echo $image[sizes][thumbnail]; ?>" class="img-circle img-avatar" />
 					</div>
 
 					<?php
@@ -32,7 +32,7 @@
 
 	else :
 
-	    echo "Du måste lägga till logotyper";
+	    echo "Du måste lägga till bilder";
 
 	endif;
 

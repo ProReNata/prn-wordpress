@@ -12,7 +12,7 @@ $image = get_field('avatar') ?: null;
 		<div class="pure-u-1-1">
 			<blockquote><?php echo $quote; ?></blockquote>
 			<div class="quotee">
-				<img src="<?php echo $image[url]; ?>" class="quotee-img" />
+				<img src="<?php echo $image[sizes][thumbnail]; ?>" class="quotee-img" />
 				<div class="quotee-line-1"><?php echo $quotee_line_1; ?></div>
 				<div class="quotee-line-2"><?php echo $quotee_line_2; ?></div>
 			</div>
