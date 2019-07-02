@@ -14,6 +14,12 @@ get_header(); ?>
 
 <?php while(have_posts()) : the_post(); ?>
 
+	<div class="pure-g">
+		<div class="pure-u-1-1">
+			<h1><?php the_title(); ?></h1>
+		</div>
+	</div>
+
 	<?php the_content(); ?>
 
 <?php endwhile; ?>
