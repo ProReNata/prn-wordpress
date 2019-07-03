@@ -9,6 +9,10 @@ nav {
     font-size: @logoSize/1.2;
     margin: (@navSize - @logoSize)/2 1rem;
   }
+  div {
+    display: inline-block;
+    vertical-align: top;
+  }
   ul {
     vertical-align: top;
     display: inline-block;
@@ -18,10 +22,13 @@ nav {
     li {
       display: inline-block;
       padding: (@navSize - 1.5rem)/2 .75rem;
-      font-weight: 700;
-      color: @color-s800;
-      &:hover {
-        text-decoration: underline;
+      a {
+        font-weight: 700;
+        color: @color-s800;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

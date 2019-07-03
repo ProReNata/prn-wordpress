@@ -20,20 +20,11 @@
 <nav>
   <div class="pure-g">
     <div class="pure-u-3-4">
-      <h3 class="logo"><?php bloginfo('name'); ?></h3>
-      <ul>
-        <li>Moduler</li>
-        <li>Utbildningar</li>
-        <li>Pris</li>
-        <li>Om oss</li>
-        <li>Jobb</li>
-      </ul>
+      <a class="logo" href="/"><?php bloginfo('name'); ?></a>
+      <?php wp_nav_menu( array( 'theme_location' => 'header-menu-left' ) ); ?>
     </div>
     <div class="pure-u-1-4 text-right">
-      <ul>
-        <li>Support</li>
-        <li>Logga in</li>
-      </ul>
+      <?php wp_nav_menu( array( 'theme_location' => 'header-menu-right' ) ); ?>
     </div>
   </div>
 </nav>

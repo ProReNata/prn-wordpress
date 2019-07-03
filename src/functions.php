@@ -31,3 +31,16 @@ add_action('init', 'remove_header_extra');
 
 
 include 'includes/acf.php';
+
+// Add menus source: https://codex.wordpress.org/Navigation_Menus
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'header-menu-left' => __( 'Header Menu L' ),
+      'header-menu-right' => __( 'Header Menu R' ),
+      'footer-menu-left' => __( 'Footer Menu L' ),
+      'footer-menu-right' => __( 'Footer Menu R' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
