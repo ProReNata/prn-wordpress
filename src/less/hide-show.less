@@ -1,19 +1,21 @@
-.hide, [class*='show'] { display: none; }
-.show { display: block; }
+.hide() { display: none; }
+.show() { display: block; }
+
+[class*='prn-show'] { .hide(); }
 
 @media screen and (min-width: 35.5em) {
-  .hide-sm { .hide; }
-  .show-sm { .show; }
+  .prn-hide-sm { .hide(); }
+  .prn-show-sm { .show(); }
 }
 @media screen and (min-width: 48em) {
-  .hide-md { .hide; }
-  .show-md { .show; }
+  .prn-hide-md { .hide(); }
+  .prn-show-md { .show(); }
 }
 @media screen and (min-width: 64em) {
-  .hide-lg { .hide; }
-  .show-lg { .show; }
+  .prn-hide-lg { .hide(); }
+  .prn-show-lg { .show(); }
 }
 @media screen and (min-width: 80em) {
-  .hide-xl { .hide; }
-  .show-xl { .show; }
+  .prn-hide-xl { .hide(); }
+  .prn-show-xl { .show(); }
 }

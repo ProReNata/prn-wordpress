@@ -14,7 +14,7 @@ $dir = get_field('img_side') ?: 'left';
 		<?php if ($dir == 'left') {
 			echo '<div class="pure-u-1-1 pure-u-md-7-12 text-center">';
 		} else {
-			echo '<div class="pure-u-1-1 hide-md text-center">';
+			echo '<div class="pure-u-1-1 prn-hide-md text-center">';
 		} ?>
 			<img src="<?php echo $image['url'] ?>" alt="" class="pure-img">
 		</div>
@@ -24,7 +24,7 @@ $dir = get_field('img_side') ?: 'left';
 			<?php echo $description; ?>
 		</div>
 		<?php if ($dir == 'right') { ?>
-			<div class="pure-u-md-7-12 show-md text-center">
+			<div class="pure-u-md-7-12 prn-show-md text-center">
 				<img src="<?php echo $image['url'] ?>" alt="" class="pure-img">
 			</div>
 		<?php } ?>
