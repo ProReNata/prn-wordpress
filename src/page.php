@@ -18,7 +18,7 @@ get_header(); ?>
 
 $style = "";
 if ( has_post_thumbnail() ) {
-		$style = sprintf("background-image:url('%s')", get_the_post_thumbnail_url( null, 'full' ));
+		$style = sprintf("background-image:url('%s'); text-shadow: 0 0 2rem rgba(0,0,0,0.2);", get_the_post_thumbnail_url( null, 'large' ));
 }
 ?>
 
@@ -29,7 +29,9 @@ if ( has_post_thumbnail() ) {
 		</div>
 	</div>
 
-	<?php the_content(); ?>
+	<article>
+		<?php the_content(); ?>
+	</article>
 
 <?php endwhile; ?>
 
