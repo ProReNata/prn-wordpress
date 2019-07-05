@@ -10,13 +10,22 @@
  * @package WordPress
  * @subpackage themename
  */
+
+
 get_header(); ?>
 
-<?php while(have_posts()) : the_post(); ?>
+<?php while(have_posts()) : the_post();
 
-	<div class="pure-g">
-		<div class="pure-u-1-1">
+$style = "";
+if ( has_post_thumbnail() ) {
+		$style = sprintf("background-image:url('%s')", get_the_post_thumbnail_url( null, 'full' ));
+}
+?>
+
+	<div class="hero" style="<?php echo $style; ?>">
+	  <div class="hero-content">
 			<h1><?php the_title(); ?></h1>
+			<p class="hero-leading"><?php echo $description; ?></p>
 		</div>
 	</div>
 

@@ -26,7 +26,7 @@
   </div>
   <div class="pure-g">
     <div class="pure-u-1-1 l-box text-small">
-      Copyright &copy; 2019
+      Copyright &copy; 2019 Prorenata AB
     </div>
   </div>
 </footer>

@@ -44,3 +44,6 @@ function register_my_menus() {
   );
 }
 add_action( 'init', 'register_my_menus' );
+
+
+add_theme_support( 'post-thumbnails' );

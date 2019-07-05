@@ -1,12 +1,15 @@
 .hero {
-  background-position: 50% 50%;
   background-size: cover;
-  min-height: calc(100vh - 12.5rem);
+  background-position: 50% 50%;
+  background-color: @color-p500;
   padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   color: @color-light100;
+  &-fullscreen {
+    min-height: calc(100vh - 12.5rem);
+  }
   &-content {
     text-align: center;
     width: 70vw;

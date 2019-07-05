@@ -12,7 +12,7 @@ if( !empty($block['anchor']) ) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'hero';
+$className = 'hero hero-fullscreen';
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
 }
