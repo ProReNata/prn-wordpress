@@ -31,9 +31,9 @@ Shut down the docker images with `docker-compose down`
 - [ ] Add modules as custom post type
 - [ ] Modules overview page
 - [ ] Modules single page
-- [ ] Add ACF and hook everything into it
 - [ ] Background color on quote-block
-- [ ] Navigation
-- [ ] Gutenberg
 - [ ] Speed optimization
 - [ ] Include ACF into theme. [Read more here.](https://www.advancedcustomfields.com/resources/including-acf-within-a-plugin-or-theme/)
+- [ ] Book a demo functions
+- [ ] Price page
+- [ ] Nav on small pages

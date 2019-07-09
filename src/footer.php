@@ -31,6 +31,31 @@
   </div>
 </footer>
 
+<script>
+showContacForm = function() {
+  document.querySelector('#contact-form').classList.add('isActive');
+  document.querySelector('body').classList.add('modal-open');
+  return false;
+}
+hideContacForm = function() {
+  document.querySelector('#contact-form').classList.remove('isActive');
+  document.querySelector('body').classList.remove('modal-open');
+  return false;
+}
+</script>
+
+<div class="drawer" id="contact-form">
+  <div class="close" onClick="hideContacForm()">
+    <i class="fal fa-times fa-fw"></i>
+  </div>
+  <div class="drawer-content">
+    <div class="pure-g">
+      <div class="pure-u-1-1 pure-u-sm-3-5 pure-u-md-1-2 l-box pure-center">
+        <?php echo do_shortcode( '[contact-form-7 id="156" title="Kontaktformulär 1"]' ); ?>
+      </div>
+    </div>
+  </div>
+</div>
 
 <?php wp_footer(); ?>
 

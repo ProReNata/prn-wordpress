@@ -30,6 +30,6 @@ $image = get_field('background_img') ?: null;
   <div class="hero-content">
 		<h1><?php echo $title; ?></h1>
 		<p class="hero-leading"><?php echo $description; ?></p>
-		<p><a href="#" class="btn btn-primary">Boka en demo</a></p>
+		<p><a href="javascript: showContacForm();" class="btn btn-primary">Boka en demo</a></p>
 	</div>
 </div>
