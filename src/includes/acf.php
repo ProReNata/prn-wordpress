@@ -109,6 +109,17 @@ function register_acf_block_types()
         'icon'              => 'awards',
         // 'keywords'          => array( 'hero', 'front-page' ),
     ));
+
+    // Pricing block
+    acf_register_block_type(array(
+        'name'              => 'pricing',
+        'title'             => __('Pricing'),
+        'description'       => __('Pricing matrix'),
+        'render_template'   => 'blocks/pricing.php',
+        'category'          => 'common',
+        'icon'              => 'grid-view',
+        // 'keywords'          => array( 'hero', 'front-page' ),
+    ));
 }
 
 // Check if function exists and hook into setup.

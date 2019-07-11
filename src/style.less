@@ -44,8 +44,14 @@ h5 {
 .strong {
   font-weight: 700;
 }
-.text-small {
-  font-size: 0.7rem;
+.text{
+  &-small {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+  &-muted {
+    color: @color-dark50;
+  }
 }
 .bg {
   &-a500 { background-color: @color-a500 }
@@ -63,9 +69,17 @@ h5 {
     }
   }
 }
+.paper {
+  border-radius: .25rem;
+  border: 1px solid white;
+  background: @color-s100;
+  padding: calc(.5rem - 1px) 1rem;
+  box-shadow: @shadow;
+}
 @import "less/btn";
 @import "less/logo";
 @import "less/quote";
+@import "less/table";
 
 // Specifics
 
@@ -75,3 +89,58 @@ h5 {
 @import "less/article";
 @import 'less/drawer';
 @import 'less/forms';
+
+.pricing-column {
+  text-align: center;
+  h3 {
+    margin: .25rem 0 .5rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  span {
+    display: block;
+    font-size: 2rem;
+    line-height: 4rem;
+    font-weight: 500;
+    color: @color-dark100;
+  }
+}
+.pricing {
+  &-multi-user {
+    .pricing-single-user {
+      &-price {display: none;}
+      &-license {display: none;}
+    }
+    & &-switch {
+      background: @color-s300;
+    };
+  }
+  &-single-user {
+    .pricing-multi-user{
+      &-price {display: none;}
+      &-license {display: none;}
+    }
+    & &-switch {
+      background: @color-s300;
+    };
+  }
+}
+
+.switch {
+  display: inline-flex;
+  background: @color-s100;
+  border-radius: 2rem;
+  margin: 1rem auto 1.5rem;
+  padding: .25rem;
+  &-option {
+    padding: .25rem 1rem;
+    // background: @color-s200;
+    border-radius: 2rem;
+    margin: .25rem;
+    cursor: pointer;
+    &:hover {
+      color: @color-p900;
+      text-decoration: underline;
+    }
+  }
+}
