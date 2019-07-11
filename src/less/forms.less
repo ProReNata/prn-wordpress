@@ -32,21 +32,34 @@ input[type=submit] {
   color: @color-dark100;
 }
 
+div.wpcf7 {
+  margin-bottom: 2rem;
+}
+
 span.wpcf7-not-valid-tip {
-  font-size: 0.707rem !important;
+  font-size: 0.707rem;
   line-height: 1rem;
-  color: @color-danger600 !important;
-  background: @color-danger400 !important;
+  color: @color-danger600;
+  background: @color-danger400;
   border-radius: 0.25rem;
   padding: calc(.25rem - 1px) .5rem;
   margin: .125rem 0 1rem;
   border: 1px solid @color-danger600;
 }
-div.wpcf7-response-output.wpcf7-validation-errors {
-  color: @color-danger600 !important;
-  background: @color-danger400 !important;
-  border-radius: 0.25rem;
-  padding: calc(.5rem - 1px) .75rem;
-  margin: .125rem 0 1rem;
-  border: 1px solid @color-danger600;
+div.wpcf7-response-output {
+  max-width: calc(33rem);
+  margin-left: auto;
+  margin-right: auto;
+
+  &.wpcf7-validation-errors, &.wpcf7-mail-sent-ng {
+    color: @color-danger600;
+    background: @color-danger400;
+    border-radius: 0.25rem;
+    padding: calc(.5rem - 1px) .75rem;
+    margin: .125rem auto 1rem;
+    border: 1px solid @color-danger600;
+  }
+}
+.screen-reader-response {
+  display: none;
 }

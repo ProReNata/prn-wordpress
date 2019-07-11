@@ -47,3 +47,10 @@ add_action( 'init', 'register_my_menus' );
 
 
 add_theme_support( 'post-thumbnails' );
+
+// Remove Contact Form 7 class - srouce: https://www.isitwp.com/deregister-contact-form-7-css-style-sheet/
+
+add_action( 'wp_print_styles', 'wps_deregister_styles', 100 );
+function wps_deregister_styles() {
+    wp_deregister_style( 'contact-form-7' );
+}

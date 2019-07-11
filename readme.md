@@ -34,6 +34,6 @@ Shut down the docker images with `docker-compose down`
 - [ ] Background color on quote-block
 - [ ] Speed optimization
 - [ ] Include ACF into theme. [Read more here.](https://www.advancedcustomfields.com/resources/including-acf-within-a-plugin-or-theme/)
-- [ ] Book a demo functions
+- [ ] Book a demo functions - connect to Trello (ask Jens how)
 - [ ] Price page
 - [ ] Nav on small pages
