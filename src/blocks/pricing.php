@@ -5,6 +5,17 @@
 <div class="section bg-s200">
 	<div class="pricing pricing-single-user pure-g">
 
+		<div class="pure-u-1-1 text-center show prn-hide-sm">
+			<div class="switch">
+				<div class="switch-option pricing-single-user-switch " onClick="pricingFor(1);">
+					Enanvändarlicens
+				</div>
+				<div class="switch-option pricing-multi-user-switch" onClick="pricingFor(0);">
+					Fleranvändarlicens
+				</div>
+			</div>
+		</div>
+
 		<div class="pricing-column l-box pure-u-1-1 pure-u-sm-1-3">
 			<div class="paper">
 				<h3>Standard</h3>
