@@ -34,12 +34,12 @@
 <script>
 showContacForm = function() {
   document.querySelector('#contact-form').classList.add('isActive');
-  document.querySelector('body').classList.add('modal-open');
+  document.querySelector('body').classList.add('drawer-open');
   return false;
 }
 hideContacForm = function() {
   document.querySelector('#contact-form').classList.remove('isActive');
-  document.querySelector('body').classList.remove('modal-open');
+  document.querySelector('body').classList.remove('drawer-open');
   return false;
 }
 </script>

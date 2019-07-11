@@ -1,0 +1,52 @@
+label {
+  font-size: 0.707rem;
+  line-height: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  display: block;
+}
+
+input:not([type=submit]), textarea {
+  color: @color-dark100;
+  margin: 0;
+  background-color: @color-s0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: @color-s500;
+  border-radius: 0.25rem;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: text;
+  outline: none;
+  padding: calc(0.5rem - 1px) 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  display: inline-block;
+  max-height: 8rem;
+}
+input[type=submit] {
+  .btn;
+  background-color: @color-p500;
+  border-color: @color-p500;
+  color: @color-dark100;
+}
+
+span.wpcf7-not-valid-tip {
+  font-size: 0.707rem !important;
+  line-height: 1rem;
+  color: @color-danger600 !important;
+  background: @color-danger400 !important;
+  border-radius: 0.25rem;
+  padding: calc(.25rem - 1px) .5rem;
+  margin: .125rem 0 1rem;
+  border: 1px solid @color-danger600;
+}
+div.wpcf7-response-output.wpcf7-validation-errors {
+  color: @color-danger600 !important;
+  background: @color-danger400 !important;
+  border-radius: 0.25rem;
+  padding: calc(.5rem - 1px) .75rem;
+  margin: .125rem 0 1rem;
+  border: 1px solid @color-danger600;
+}

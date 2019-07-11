@@ -1,0 +1,50 @@
+.drawer {
+  @drawerHeight: 95vh;
+  position: fixed;
+  height: @drawerHeight;
+  top: -100%;
+  left: 0;
+  right: 0;
+  background: @color-a500;
+  overflow: auto;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: top 0.5s ease;
+  box-shadow: 0 3px 7px @color-dark75;
+  &.isActive {
+    top: 0;
+  }
+
+  &-content {
+    margin: 1rem;
+    width: 100%;
+    max-height: @drawerHeight;
+    overflow: auto;
+    flex-shrink: 0;
+  }
+
+  .close{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    border-radius: 4rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    color: @color-s800;
+    background: @color-light30;
+    transition: background .3s ease;
+    &:hover {
+      background: @color-light70;
+    }
+  }
+}
+body.drawer-open {
+  overflow: hidden;
+}

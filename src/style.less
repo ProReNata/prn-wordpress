@@ -22,17 +22,21 @@ html {
 body {
   background: @color-s100;
 }
-h1, h2, h3, h4, h5, h6 ,p {
-  max-width: 33rem;
-  margin-left: auto;
-  margin-right: auto;
-}
 a {
   color: @color-a900;
+}
+small {
+  font-size: 0.707rem;
+  color: @color-s800;
 }
 h1 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
+}
+h2, h3, h4, h5, h6 ,p {
+  max-width: 33rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 h5 {
   color: @color-p700;
@@ -68,120 +72,6 @@ h5 {
 @import "less/footer";
 @import "less/front-page";
 @import "less/navigation";
-
-article {
-  margin-top: 3rem;
-  h1, h2, h3, h4, h5, p {
-    max-width: calc(33rem + 10vw);
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 5vw;
-  }
-  h3 {
-    margin-top: 5rem;
-  }
-}
-
-.drawer {
-  @drawerHeight: 95vh;
-  position: fixed;
-  height: @drawerHeight;
-  top: -100%;
-  left: 0;
-  right: 0;
-  background: @color-a500;
-  overflow: auto;
-  display: flex;
-  padding: 0;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  transition: top 0.5s ease;
-  box-shadow: 0 3px 7px @color-dark75;
-  &.isActive {
-    top: 0;
-  }
-
-  &-content {
-    margin: 1rem;
-    width: 100%;
-    max-height: @drawerHeight;
-    overflow: auto;
-    flex-shrink: 0;
-  }
-
-  .close{
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    border-radius: 4rem;
-    width: 3rem;
-    height: 3rem;
-    font-size: 2rem;
-    line-height: 3rem;
-    text-align: center;
-    cursor: pointer;
-    color: @color-s800;
-    background: @color-light30;
-    transition: background .3s ease;
-    &:hover {
-      background: @color-light70;
-    }
-  }
-}
-body.modal-open {
-  overflow: hidden;
-}
-
-label {
-  font-size: 0.707rem;
-  line-height: 1rem;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  display: block;
-}
-
-input:not([type=submit]), textarea {
-  color: @color-dark100;
-  margin: 0;
-  background-color: @color-s0;
-  border-style: solid;
-  border-width: 1px;
-  border-color: @color-s500;
-  border-radius: 0.25rem;
-  width: 100%;
-  box-sizing: border-box;
-  cursor: text;
-  outline: none;
-  padding: 0.5rem 0.5rem;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.5rem;
-  display: inline-block;
-  max-height: 8rem;
-}
-input[type=submit] {
-  .btn;
-  background-color: @color-p500;
-  border-color: @color-p500;
-  color: @color-dark100;
-}
-
-span.wpcf7-not-valid-tip {
-  font-size: 0.707rem !important;
-  line-height: 1rem;
-  color: @color-danger600 !important;
-  background: @color-danger400 !important;
-  border-radius: 0.25rem;
-  padding: calc(.25rem - 1px) .5rem;
-  margin: .125rem 0 1rem;
-  border: 1px solid @color-danger600;
-}
-div.wpcf7-response-output.wpcf7-validation-errors {
-  color: @color-danger600 !important;
-  background: @color-danger400 !important;
-  border-radius: 0.25rem;
-  padding: calc(.5rem - 1px) .75rem;
-  margin: .125rem 0 1rem;
-  border: 1px solid @color-danger600;
-}
+@import "less/article";
+@import 'less/drawer';
+@import 'less/forms';
