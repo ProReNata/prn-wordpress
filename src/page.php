@@ -22,8 +22,8 @@ if ( has_post_thumbnail() ) {
 }
 ?>
 
-	<div class="hero" style="<?php echo $style; ?>">
-	  <div class="hero-content">
+	<div class="page-header" style="<?php echo $style; ?>">
+	  <div class="page-header-content">
 			<h1><?php the_title(); ?></h1>
 			<p class="hero-leading"><?php echo $description; ?></p>
 		</div>
