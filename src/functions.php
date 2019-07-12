@@ -29,7 +29,7 @@ function remove_header_extra(){
 }
 add_action('init', 'remove_header_extra');
 
-
+// Add the Advamced Custom Fields settings from file
 include 'includes/acf.php';
 
 // Add menus source: https://codex.wordpress.org/Navigation_Menus
@@ -45,12 +45,42 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
-
+// Add support for Selected image
 add_theme_support( 'post-thumbnails' );
 
 // Remove Contact Form 7 class - srouce: https://www.isitwp.com/deregister-contact-form-7-css-style-sheet/
-
 add_action( 'wp_print_styles', 'wps_deregister_styles', 100 );
 function wps_deregister_styles() {
     wp_deregister_style( 'contact-form-7' );
 }
+
+/**
+ * Register a custom post type called "module".
+ *
+ */
+function wpdocs_codex_module_init() {
+    $labels = array(
+        'name'                  => _x( 'Moduler', 'Post type general name', 'textdomain' ),
+        'singular_name'         => _x( 'Modul', 'Post type singular name', 'textdomain' ),
+        'featured_image'        => _x( 'Modulbild', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'textdomain' )
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'modul' ),
+        'capability_type'    => 'page',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+				'menu_icon' 				 => 'dashicons-book'
+    );
+
+    register_post_type( 'module', $args );
+}
+add_action( 'init', 'wpdocs_codex_module_init' );
