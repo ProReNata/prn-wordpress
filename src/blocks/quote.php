@@ -5,9 +5,9 @@ $quote = get_field('quote') ?: 'xxx';
 $quotee_line_1 = get_field('quotee_line_1') ?: 'xxx';
 $quotee_line_2 = get_field('quotee_line_2') ?: 'xxx';
 $image = get_field('avatar') ?: null;
-// TODO: Background Color Setting
+$bgcolor = get_field('background') ?: 's400';
 ?>
-<div class="section bg-a500">
+<div class="section bg-<?php echo $bgcolor; ?>">
 	<div class="pure-g">
 		<div class="pure-u-1-1">
 			<blockquote><?php echo $quote; ?></blockquote>
