@@ -35,3 +35,4 @@ Shut down the docker images with `docker-compose down`
 - [ ] Include ACF into theme. [Read more here.](https://www.advancedcustomfields.com/resources/including-acf-within-a-plugin-or-theme/)
 - [ ] Book a demo functions - connect to Trello (ask Jens how)
 - [ ] Nav on small pages
+- [ ] Snapp nav on scroll
