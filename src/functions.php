@@ -72,7 +72,7 @@ function wpdocs_codex_module_init() {
         'show_ui'            => true,
         'show_in_menu'       => true,
         'query_var'          => true,
-        'rewrite'            => array( 'slug' => 'modul' ),
+        'rewrite'            => array( 'slug' => 'moduler' ),
         'capability_type'    => 'page',
         'has_archive'        => true,
         'hierarchical'       => false,
