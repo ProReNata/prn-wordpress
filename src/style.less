@@ -10,6 +10,7 @@ Version: 1.0
 @import "https://rsms.me/inter/inter.css";
 @import (less) "../node_modules/@prorenata/style-config/css/output.css";
 @import "../node_modules/@prorenata/style-config/less/typography";
+@import "../node_modules/slick-carousel/slick/slick";
 
 @import "less/grid";
 @import "less/hide-show";
@@ -145,6 +146,19 @@ h5 {
     &:hover {
       color: @color-p900;
       text-decoration: underline;
+    }
+  }
+}
+
+.module-slide {
+  padding:0 1rem;
+  .paper {
+    width: 20rem;
+    img {
+      width: 100%;
+      height: auto;
+      margin: .5rem auto 1rem;
+      border-radius: .25rem;
     }
   }
 }

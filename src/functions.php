@@ -84,3 +84,6 @@ function wpdocs_codex_module_init() {
     register_post_type( 'module', $args );
 }
 add_action( 'init', 'wpdocs_codex_module_init' );
+
+// Enqeue scripts
+wp_enqueue_script( 'script', get_template_directory_uri() . '/scripts.min.js', array('jquery'), 1.1, true);

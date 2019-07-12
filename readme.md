@@ -28,7 +28,6 @@ Shut down the docker images with `docker-compose down`
 
 
 # ToDo
-- [ ] Add modules as custom post type
 - [ ] Modules overview page
 - [ ] Modules single page
 - [ ] Speed optimization

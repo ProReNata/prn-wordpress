@@ -18,10 +18,12 @@
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
     "grunt-contrib-watch": "^1.1.0",
     "less-plugin-autoprefix": "^2.0.0",
     "less-plugin-clean-css": "^1.5.1",
-    "purecss": "^1.0.0"
+    "purecss": "^1.0.0",
+    "slick-carousel": "^1.8.1"
   },
   "dependencies": {}
 }

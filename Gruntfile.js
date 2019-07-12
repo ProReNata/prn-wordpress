@@ -66,7 +66,21 @@ module.exports = function(grunt) {
         }
       }
     },
+    uglify: {
+      production: {
+        files: {
+          'build/scripts.min.js': ['node_modules/slick-carousel/slick/slick.js', 'src/scripts.js']
+        }
+      }
+    },
     watch: {
+      js: {
+        files: ['src/**/*.js'],
+        tasks: ['uglify'],
+        options: {
+          spawn: false,
+        },
+      },
       less: {
         files: ['src/**/*.less'],
         tasks: ['less:development'],
@@ -96,10 +110,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['clean:all', 'browserSync', 'copy', 'less:development', 'watch']);
-  grunt.registerTask('production', ['clean:all', 'copy', 'less:production']);
+  grunt.registerTask('default', ['clean:all', 'browserSync', 'copy', 'uglify', 'less:development', 'watch']);
+  grunt.registerTask('production', ['clean:all', 'copy', 'uglify', 'less:production']);
 
 };
