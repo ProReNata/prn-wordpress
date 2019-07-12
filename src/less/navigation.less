@@ -1,5 +1,17 @@
+
+@navSize: 5rem;
+
+body {
+  padding-top: @navSize;
+}
+
 nav {
-  @navSize: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5000;
+  box-shadow: @shadow;
   height: @navSize;
   background: @color-s100;
   .logo {
