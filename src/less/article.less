@@ -22,7 +22,7 @@
 }
 
 article {
-  margin-top: 3rem;
+  margin: 3rem 0;
   h1, h2, h3, h4, h5, p {
     max-width: calc(33rem + 10vw);
     margin-left: auto;
@@ -31,5 +31,11 @@ article {
   }
   h3 {
     margin-top: 5rem;
+  }
+  > .section:first-child {
+    margin-top: -3rem;
+  }
+  > .section:last-child {
+    margin-bottom: -3rem;
   }
 }

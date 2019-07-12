@@ -2,7 +2,7 @@
 
 ?>
 
-<div class="section bg-s200" style="margin-top: -3rem;">
+<div class="section bg-s200">
 	<div class="pricing pricing-single-user pure-g">
 
 		<div class="pure-u-1-1 text-center">

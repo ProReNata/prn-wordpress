@@ -36,3 +36,4 @@ Shut down the docker images with `docker-compose down`
 - [ ] Book a demo functions - connect to Trello (ask Jens how)
 - [ ] Nav on small pages
 - [ ] Snapp nav on scroll
+- [ ] 404-page

@@ -9,20 +9,27 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  */
-get_header(); ?>
+ get_header(); ?>
 
-<h3>This is the core page (index.php):</h3>
+ <?php while(have_posts()) : the_post();
 
-<?php while(have_posts()) : the_post(); ?>
+ $style = "";
+ if ( has_post_thumbnail() ) {
+ 		$style = sprintf("background-image:url('%s'); text-shadow: 0 0 1.5rem rgba(0,0,0,0.3);", get_the_post_thumbnail_url( null, 'large' ));
+ }
+ ?>
 
-	title: <?php the_title(); ?><br />
-	ID: <?php the_ID(); ?><br />
-	time: <?php the_time(get_option('date_format')); ?><br />
-	excerpt: <?php the_excerpt(); ?><br />
-	link: <a href="<?php the_permalink(); ?>">link</a><br />
-	content: <?php the_content(); ?><br />
-	<hr />
+ 	<div class="page-header" style="<?php echo $style; ?>">
+ 	  <div class="page-header-content">
+ 			<h1><?php the_title(); ?></h1>
+ 			<p class="hero-leading"><?php echo $description; ?></p>
+ 		</div>
+ 	</div>
 
-<?php endwhile; ?>
+ 	<article>
+ 		<?php the_content(); ?>
+ 	</article>
 
-<?php get_footer(); ?>
+ <?php endwhile; ?>
+
+ <?php get_footer(); ?>
