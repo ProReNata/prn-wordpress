@@ -26,6 +26,11 @@ body {
 }
 a {
   color: @color-a900;
+  text-decoration: none;
+  &:hover {
+    color: @color-a700;
+    text-decoration: underline;
+  }
 }
 small {
   font-size: 0.707rem;
@@ -48,8 +53,8 @@ h5 {
 }
 .text{
   &-small {
-    font-size: 0.7rem;
-    line-height: 1rem;
+    font-size: 0.871rem;
+    line-height: 1.25rem;
   }
   &-muted {
     color: @color-dark50;
@@ -152,13 +157,58 @@ h5 {
 
 .module-slide {
   padding:0 1rem;
+  margin-bottom: 2rem;
   .paper {
     width: 20rem;
+    border-radius: 1.25rem;
     img {
       width: 100%;
       height: auto;
       margin: .5rem auto 1rem;
-      border-radius: .25rem;
+      border-radius: .5rem;
+    }
+  }
+}
+.slick-arrow {
+  position: absolute;
+  z-index: 3000;
+  top: 40%;
+  margin-top: -2rem;
+  border-radius: 4rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  line-height: 4rem;
+  text-align: center;
+  cursor: pointer;
+  color: @color-s800;
+  background: @color-light70;
+  transition: background .3s ease;
+  &:hover {
+    background: @color-light100;
+  }
+  &-next {
+    right: 1vw;
+  }
+  &-prev {
+    left: 1vw;
+  }
+}
+.slick-dots {
+  padding: 0 0 2rem;
+  margin: 0;
+  text-align: center;
+  > li {
+    list-style: none;
+    color: rgba(0,0,0,0);
+    background: @color-s400;
+    display: inline-block;
+    margin: .5rem;
+    width: .75rem;
+    height: .75rem;
+    border-radius: 1rem;
+    &.slick-active {
+      background: @color-s800;
     }
   }
 }
