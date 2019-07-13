@@ -16,7 +16,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class() ?>>
 <nav>
   <div class="pure-g">
     <div class="pure-u-3-4">

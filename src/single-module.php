@@ -1,6 +1,6 @@
 <?php
 /**
- * The Template for displaying all single module.
+ * The Template for displaying a single module.
  *
  */
  get_header(); ?>

@@ -17,7 +17,7 @@ if( $posts ): ?>
 		<?php foreach( $posts as $p ):?>
 			<div class="module-card">
 				<div class="paper">
-					<?php echo get_the_post_thumbnail( $p->ID, 'medium', array( 'class' => 'alignleft' ) ); ?>
+					<?php echo get_the_post_thumbnail( $p->ID, 'medium' ); ?>
 					<h4><a href="<?php echo get_permalink( $p->ID ); ?>"><?php echo get_the_title( $p->ID ); ?></a></h4>
 					<div class="text-small"><?php the_field('summary', $p->ID); ?></div>
 					<p><a href="<?php echo get_permalink( $p->ID ); ?>">Läs mer -></a></p>
