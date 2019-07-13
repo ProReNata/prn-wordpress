@@ -15,7 +15,7 @@ if( $posts ): ?>
 
 	<div class="module-slides">
 		<?php foreach( $posts as $p ):?>
-			<div class="module-slide" style="width: 320px;">
+			<div class="module-card">
 				<div class="paper">
 					<?php echo get_the_post_thumbnail( $p->ID, 'medium', array( 'class' => 'alignleft' ) ); ?>
 					<h4><a href="<?php echo get_permalink( $p->ID ); ?>"><?php echo get_the_title( $p->ID ); ?></a></h4>

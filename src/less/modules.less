@@ -1,0 +1,61 @@
+.module-card {
+  padding: 0 .75rem;
+  margin-bottom: 2rem;
+  .paper {
+    width: 20rem;
+    border-radius: 1.25rem;
+    img {
+      width: 100%;
+      height: auto;
+      margin: .5rem auto 1rem;
+      border-radius: .5rem;
+    }
+  }
+}
+
+
+// Slick Slider - used on front page modules block
+
+.slick-arrow {
+  position: absolute;
+  z-index: 3000;
+  top: 40%;
+  margin-top: -2rem;
+  border-radius: 4rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  line-height: 4rem;
+  text-align: center;
+  cursor: pointer;
+  color: @color-s800;
+  background: @color-light70;
+  transition: background .3s ease;
+  &:hover {
+    background: @color-light100;
+  }
+  &-next {
+    right: 1vw;
+  }
+  &-prev {
+    left: 1vw;
+  }
+}
+.slick-dots {
+  padding: 0 0 2rem;
+  margin: 0;
+  text-align: center;
+  > li {
+    list-style: none;
+    color: rgba(0,0,0,0);
+    background: @color-s400;
+    display: inline-block;
+    margin: .5rem;
+    width: .75rem;
+    height: .75rem;
+    border-radius: 1rem;
+    &.slick-active {
+      background: @color-s800;
+    }
+  }
+}
