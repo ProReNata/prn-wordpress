@@ -26,6 +26,16 @@ module.exports = function(grunt) {
       assets: ['build/assets/'],
       all: ['build/*']
     },
+    compress: {
+      main: {
+        options: {
+          archive: 'upload.zip'
+        },
+        files: [
+          {src: ['build/**'], dest: '/'}
+        ]
+      }
+    },
     copy: {
       php: {
         files: [
@@ -108,6 +118,7 @@ module.exports = function(grunt) {
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -115,6 +126,6 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', ['clean:all', 'browserSync', 'copy', 'uglify', 'less:development', 'watch']);
-  grunt.registerTask('production', ['clean:all', 'copy', 'uglify', 'less:production']);
+  grunt.registerTask('production', ['clean:all', 'copy', 'uglify', 'less:production', 'compress']);
 
 };
