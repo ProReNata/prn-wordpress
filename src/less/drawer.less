@@ -25,6 +25,23 @@
     max-height: @drawerHeight;
     overflow: auto;
     flex-shrink: 0;
+
+    ul {
+      padding: 0;
+      li {
+        list-style: none;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        font-weight: 300;
+        padding: 0;
+        a {
+          color: @color-dark100;
+          display: block;
+          padding: 1rem 0;
+        }
+      }
+    }
   }
 
   .close{
