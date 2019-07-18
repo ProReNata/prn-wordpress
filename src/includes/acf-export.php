@@ -261,6 +261,58 @@ acf_add_local_field_group(array(
 ));
 
 acf_add_local_field_group(array(
+	'key' => 'group_5d284a60b2d4f',
+	'title' => 'Block: Modules',
+	'fields' => array(
+		array(
+			'key' => 'field_5d284a72292cb',
+			'label' => 'Modules',
+			'name' => 'modules',
+			'type' => 'relationship',
+			'instructions' => '',
+			'required' => 1,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'post_type' => array(
+				0 => 'module',
+			),
+			'taxonomy' => '',
+			'filters' => array(
+				0 => 'search',
+				1 => 'taxonomy',
+			),
+			'elements' => array(
+				0 => 'featured_image',
+			),
+			'min' => '',
+			'max' => '',
+			'return_format' => 'object',
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'block',
+				'operator' => '==',
+				'value' => 'acf/modules',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => true,
+	'description' => '',
+));
+
+acf_add_local_field_group(array(
 	'key' => 'group_5d16860cd4a87',
 	'title' => 'Block: Quote',
 	'fields' => array(
@@ -620,6 +672,49 @@ acf_add_local_field_group(array(
 				'param' => 'block',
 				'operator' => '==',
 				'value' => 'acf/highlights-sm',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => true,
+	'description' => '',
+));
+
+acf_add_local_field_group(array(
+	'key' => 'group_5d2848ce2aa4e',
+	'title' => 'Modul',
+	'fields' => array(
+		array(
+			'key' => 'field_5d2848d706a89',
+			'label' => 'Summary',
+			'name' => 'summary',
+			'type' => 'wysiwyg',
+			'instructions' => 'Detta kommer synas på förstasidan och på sidan där modulerna listas.',
+			'required' => 1,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'tabs' => 'all',
+			'toolbar' => 'basic',
+			'media_upload' => 0,
+			'delay' => 0,
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'module',
 			),
 		),
 	),
