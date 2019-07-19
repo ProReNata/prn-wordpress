@@ -47,6 +47,7 @@ add_action( 'init', 'register_my_menus' );
 
 // Add support for Selected image
 add_theme_support( 'post-thumbnails' );
+add_image_size( 'xlarge', 2200, 1800 );
 
 // Remove Contact Form 7 class - srouce: https://www.isitwp.com/deregister-contact-form-7-css-style-sheet/
 add_action( 'wp_print_styles', 'wps_deregister_styles', 100 );
