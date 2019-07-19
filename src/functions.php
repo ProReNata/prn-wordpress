@@ -95,3 +95,14 @@ add_action( 'init', 'wpdocs_codex_module_init' );
 
 // Enqeue javascript
 wp_enqueue_script( 'script', get_template_directory_uri() . '/scripts.min.js', array('jquery'), 1.1, true);
+
+
+// Shortcode for font awesome icons
+function fa_icon_shortcode( $atts ) {
+	$atts = shortcode_atts( array(
+		'prefix' => 'fas',
+		'name' => 'name'
+	), $atts);
+	return sprintf('<i class="%s fa-%s"></i>', $atts['prefix'], $atts['name']);
+}
+add_shortcode( 'fa', 'fa_icon_shortcode' );
