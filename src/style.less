@@ -32,6 +32,11 @@ a {
     color: @color-a700;
     text-decoration: underline;
   }
+  &[href*='tel:'] {
+    @media screen and (min-width: 35.5em) {
+      color: inherit;
+    }
+  }
 }
 small {
   font-size: 0.707rem;

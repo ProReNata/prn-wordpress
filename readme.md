@@ -32,6 +32,5 @@ Shut down the docker images with `docker-compose down`
 - [ ] Speed optimization
 - [ ] Include ACF into theme. [Read more here.](https://www.advancedcustomfields.com/resources/including-acf-within-a-plugin-or-theme/)
 - [ ] Book a demo functions - connect to Trello (ask Jens how)
-- [ ] Nav on small pages
 - [ ] 404-page
-- [ ] Grunt work for build that generates a zip for upload
+- [ ] Add contact info on about page and link to it from footer

@@ -54,6 +54,14 @@ function wps_deregister_styles() {
     wp_deregister_style( 'contact-form-7' );
 }
 
+
+/**
+ * Add an options page from acf
+ */
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+}
+
 /**
  * Register a custom post type called "module".
  *
@@ -85,5 +93,5 @@ function wpdocs_codex_module_init() {
 }
 add_action( 'init', 'wpdocs_codex_module_init' );
 
-// Enqeue scripts
+// Enqeue javascript
 wp_enqueue_script( 'script', get_template_directory_uri() . '/scripts.min.js', array('jquery'), 1.1, true);

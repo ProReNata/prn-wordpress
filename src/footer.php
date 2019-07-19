@@ -17,16 +17,18 @@
       <?php wp_nav_menu( array( 'theme_location' => 'footer-menu-right' ) ); ?>
     </div>
     <div class="pure-u-1-1 pure-u-sm-1-3 pure-u-md-2-4 pure-u-lg-7-24 l-box">
-      <p>010-330 06 70<br />
-        prorenata@prorenata.se</p>
-      <p>Skeppsbron 30 <br />
-        111 30 Stockholm</p>
-      <p>Orgnr. 556827-5555</p>
+      <?php the_field('footer_text', 'option'); ?>
     </div>
   </div>
   <div class="pure-g">
     <div class="pure-u-1-1 l-box text-small">
       Copyright &copy; 2019 Prorenata AB
+
+      <?php
+      if ( get_field('privacy_page', 'option') ) {
+        printf('| <a href="%s">Intigritetspolicy</a>', get_field('privacy_page', 'option'));
+      } ?>
+
     </div>
   </div>
 </footer>
