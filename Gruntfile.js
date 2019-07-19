@@ -24,7 +24,8 @@ module.exports = function(grunt) {
     clean: {
       php: ['build/*.php'],
       assets: ['build/assets/'],
-      all: ['build/*']
+      all: ['build/*'],
+      dist: ['prn-wp-theme/']
     },
     compress: {
       main: {
@@ -32,7 +33,7 @@ module.exports = function(grunt) {
           archive: 'upload.zip'
         },
         files: [
-          {src: ['build/**'], dest: '/'}
+          {src: ['prn-wp-theme/**'], dest: '/'}
         ]
       }
     },
@@ -45,6 +46,11 @@ module.exports = function(grunt) {
       assets: {
         files: [
           {expand: true, cwd: 'src/assets/', src: ['**/*.*'], dest: 'build/assets/'},
+        ]
+      },
+      dist: {
+        files: [
+          {expand: true, cwd: 'build/', src: ['**/*.*'], dest: 'prn-wp-theme/'},
         ]
       }
     },
@@ -124,8 +130,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  // Default task(s).
+  // Default task - makes a clean build, starts browerSync and watches.
   grunt.registerTask('default', ['clean:all', 'browserSync', 'copy', 'uglify', 'less:development', 'watch']);
-  grunt.registerTask('production', ['clean:all', 'copy', 'uglify', 'less:production', 'compress']);
+  // Production task - makesa a clean build, copy to temp folder, compress and remove temp folder.
+  grunt.registerTask('production', ['clean:all', 'copy:php', 'copy:assets', 'uglify', 'less:production', 'copy:dist', 'compress' , 'clean:dist']);
 
 };
