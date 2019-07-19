@@ -27,6 +27,14 @@ Run Grunt with `grunt` to start file watcher and browser sync.
 Shut down the docker images with `docker-compose down`
 
 
+# WP Plugins we use
+- Advanced Custom Fields PRO
+- Contact Form 7
+- Smush (Image optimization)
+- SVG Support
+- W3 Total Cache
+
+
 # ToDo
 - [ ] Modules single page
 - [ ] Speed optimization
