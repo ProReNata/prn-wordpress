@@ -29,8 +29,53 @@ function remove_header_extra(){
 }
 add_action('init', 'remove_header_extra');
 
+
+// More optimisation. Source: https://geekflare.com/wordpress-performance-optimization-without-plugin/
+remove_action( 'wp_head', 'print_emoji_detection_script', 7);
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+remove_action( 'admin_print_styles', 'print_emoji_styles' );
+
+function disable_embed(){
+	wp_dequeue_script( 'wp-embed' );
+}
+add_action( 'wp_footer', 'disable_embed' );
+
+add_filter('xmlrpc_enabled', '__return_false');
+
+//Remove JQuery migrate
+function remove_jquery_migrate($scripts)
+{
+    if (!is_admin() && isset($scripts->registered['jquery'])) {
+        $script = $scripts->registered['jquery'];
+
+        if ($script->deps) { // Check whether the script has any dependencies
+            $script->deps = array_diff($script->deps, array(
+                'jquery-migrate'
+            ));
+        }
+    }
+}
+
+add_action('wp_default_scripts', 'remove_jquery_migrate');
+
+function stop_heartbeat() {
+	wp_deregister_script('heartbeat');
+}
+add_action( 'init', 'stop_heartbeat', 1 );
+
+function wpdocs_dequeue_dashicon() {
+  if (current_user_can( 'update_core' )) {
+    return;
+  }
+  wp_deregister_style('dashicons');
+}
+add_action( 'wp_enqueue_scripts', 'wpdocs_dequeue_dashicon' );
+
+
 // Add the Advamced Custom Fields settings from file
 include 'includes/acf.php';
+
 
 // Add menus source: https://codex.wordpress.org/Navigation_Menus
 function register_my_menus() {
@@ -44,6 +89,7 @@ function register_my_menus() {
   );
 }
 add_action( 'init', 'register_my_menus' );
+
 
 // Add support for Selected image
 add_theme_support( 'post-thumbnails' );
