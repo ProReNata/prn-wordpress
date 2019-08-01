@@ -36,9 +36,9 @@ Shut down the docker images with `docker-compose down`
 
 
 # ToDo
-- [ ] Modules single page
-- [ ] Speed optimization
-- [ ] Include ACF into theme. [Read more here.](https://www.advancedcustomfields.com/resources/including-acf-within-a-plugin-or-theme/)
-- [ ] Book a demo functions - connect to Trello (ask Jens how)
+- [ ] Modules single page _Need info from work group_
+- [ ] Book a demo functions - connect to Trello _Need info from Jens_
 - [ ] 404-page
 - [ ] Add contact info on about page and link to it from footer
+- [ ] Include ACF into theme. [Read more here.](https://www.advancedcustomfields.com/resources/including-acf-within-a-plugin-or-theme/)
+- [ ] Add color schemes for duo-tones. Duo-primary, duo-secondary, duo-grey, mix, warning, danger, info, success.
