@@ -690,11 +690,11 @@ acf_add_local_field_group(array(
 	'title' => 'Modul',
 	'fields' => array(
 		array(
-			'key' => 'field_5d2848d706a89',
-			'label' => 'Summary',
-			'name' => 'summary',
-			'type' => 'wysiwyg',
-			'instructions' => 'Detta kommer synas på förstasidan och på sidan där modulerna listas.',
+			'key' => 'field_5d78b4d07725a',
+			'label' => 'Länk till Zendesk',
+			'name' => 'link',
+			'type' => 'url',
+			'instructions' => '',
 			'required' => 1,
 			'conditional_logic' => 0,
 			'wrapper' => array(
@@ -703,10 +703,7 @@ acf_add_local_field_group(array(
 				'id' => '',
 			),
 			'default_value' => '',
-			'tabs' => 'all',
-			'toolbar' => 'basic',
-			'media_upload' => 0,
-			'delay' => 0,
+			'placeholder' => '',
 		),
 	),
 	'location' => array(
@@ -779,6 +776,55 @@ acf_add_local_field_group(array(
 				'param' => 'options_page',
 				'operator' => '==',
 				'value' => 'acf-options',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => true,
+	'description' => '',
+));
+
+acf_add_local_field_group(array(
+	'key' => 'group_5d78b523f1f3a',
+	'title' => 'Use Case',
+	'fields' => array(
+		array(
+			'key' => 'field_5d78b531996dc',
+			'label' => 'Moduler',
+			'name' => 'modules',
+			'type' => 'relationship',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'post_type' => array(
+				0 => 'module',
+			),
+			'taxonomy' => '',
+			'filters' => array(
+				0 => 'search',
+			),
+			'elements' => '',
+			'min' => '',
+			'max' => '',
+			'return_format' => 'object',
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'use-case',
 			),
 		),
 	),

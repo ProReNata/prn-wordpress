@@ -26,6 +26,29 @@
  		<?php the_content(); ?>
  	</article>
 
+  <?php if ( get_field('modules') ) { ?>
+    <aside class="modules-list paper paper-dark">
+      <h3>Moduler i detta use case</h3>
+      <?php
+      $posts = get_field('modules');
+      if( $posts ): ?>
+        <ul>
+        <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+          <?php setup_postdata($post); ?>
+          <li>
+              <h4><?php the_title(); ?></h4>
+              <div class="text-small">
+                <?php the_content(); ?>
+                <p class="text-right letter-spacing-normal"><a href="<?php the_field('link'); ?>">Fördjupad information -></a></p>
+              </div>
+          </li>
+        <?php endforeach; ?>
+        </ul>
+        <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+      <?php endif; ?>
+    </aside>
+  <?php } ?>
+
  <?php endwhile; ?>
 
  <?php get_footer(); ?>
