@@ -132,13 +132,45 @@ function wpdocs_codex_module_init() {
         'has_archive'        => true,
         'hierarchical'       => false,
         'menu_position'      => null,
-        'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+        'supports'           => array( 'title', 'editor' ),
 				'menu_icon' 				 => 'dashicons-book'
     );
 
     register_post_type( 'module', $args );
 }
 add_action( 'init', 'wpdocs_codex_module_init' );
+
+/**
+ * Register a custom post type called "use-case".
+ *
+ */
+function wpdocs_codex_use_case_init() {
+    $labels = array(
+        'name'                  => _x( 'Use Cases', 'Post type general name', 'textdomain' ),
+        'singular_name'         => _x( 'Use Case', 'Post type singular name', 'textdomain' ),
+        'featured_image'        => _x( 'Bild', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'textdomain' )
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'use-cases' ),
+        'capability_type'    => 'page',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+				'menu_icon' 				 => 'dashicons-book'
+    );
+
+    register_post_type( 'use-case', $args );
+}
+add_action( 'init', 'wpdocs_codex_use_case_init' );
+
 
 // Enqeue javascript
 wp_enqueue_script( 'script', get_template_directory_uri() . '/scripts.min.js', array('jquery'), 1.1, true);
