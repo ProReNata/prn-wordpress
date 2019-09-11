@@ -15,10 +15,9 @@
  <?php while(have_posts()) : the_post();?>
    <div class="module-card">
      <div class="paper">
-       <?php the_post_thumbnail( null, 'medium' ); ?>
-       <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-       <div class="text-small"><?php the_field('summary'); ?></div>
-       <p><a href="<?php the_permalink( ); ?>">Läs mer -></a></p>
+       <h4><?php the_title(); ?></h4>
+       <div class="text-small"><?php the_content(); ?></div>
+       <p><a href="<?php the_field('link'); ?>">Läs mer -></a></p>
      </div>
    </div>
  <?php endwhile; ?>
