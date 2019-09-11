@@ -131,7 +131,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task - makes a clean build, starts browerSync and watches.
-  grunt.registerTask('default', ['clean:all', 'browserSync', 'copy', 'uglify', 'less:development', 'watch']);
+  grunt.registerTask('default', ['clean:all', 'browserSync', 'copy:php','copy:assets', 'uglify', 'less:development', 'watch']);
   // Production task - makesa a clean build, copy to temp folder, compress and remove temp folder.
   grunt.registerTask('production', ['clean:all', 'copy:php', 'copy:assets', 'uglify', 'less:production', 'copy:dist', 'compress' , 'clean:dist']);
 
