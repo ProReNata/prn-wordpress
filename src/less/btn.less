@@ -8,10 +8,16 @@
   border-radius: .25rem;
   background: @color-s200;
   text-decoration: none;
+  transition: all 0.2s;
 
   &-primary {
     color: @color-dark100 !important;
     background-color: @color-p500;
     border-color: @color-p500;
+    &:hover {
+      text-decoration: none;
+      border-color: @color-p500;
+      background: @color-p300;
+    }
   }
 }
