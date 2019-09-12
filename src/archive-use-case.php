@@ -1,13 +1,13 @@
 <?php
 /**
- * The Template for displaying all modules.
+ * The Template for displaying all use case.
  *
  */
  get_header(); ?>
 
-  	<div class="page-header">
+  	<div class="page-header bg-a500">
   	  <div class="page-header-content">
-        <h1 class="text-center">Prorenatas Moduler</h1>
+        <h1 class="text-center">Så används Prorenata</h1>
       </div>
     </div>
 
