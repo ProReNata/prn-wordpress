@@ -39,12 +39,12 @@
 </nav>
 
 <script>
-showMenu = function() {
+const showMenu = function() {
   document.querySelector('#menu').classList.add('isActive');
   document.querySelector('body').classList.add('drawer-open');
   return false;
 }
-hideMenu = function() {
+const hideMenu = function() {
   document.querySelector('#menu').classList.remove('isActive');
   document.querySelector('body').classList.remove('drawer-open');
   return false;

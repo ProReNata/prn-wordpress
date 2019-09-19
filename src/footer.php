@@ -34,12 +34,12 @@
 </footer>
 
 <script>
-showContacForm = function() {
+const showContacForm = function() {
   document.querySelector('#contact-form').classList.add('isActive');
   document.querySelector('body').classList.add('drawer-open');
   return false;
 }
-hideContacForm = function() {
+const hideContacForm = function() {
   document.querySelector('#contact-form').classList.remove('isActive');
   document.querySelector('body').classList.remove('drawer-open');
   return false;
