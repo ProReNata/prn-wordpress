@@ -28,7 +28,7 @@
 
   <?php if ( get_field('modules') ) { ?>
     <aside class="modules-list paper paper-dark">
-      <h3>Moduler i detta use case</h3>
+      <h3>Läs mer</h3>
       <?php
       $posts = get_field('modules');
       if( $posts ): ?>
