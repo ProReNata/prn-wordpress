@@ -82,6 +82,16 @@ module.exports = function(grunt) {
         }
       }
     },
+    purgecss: {
+      production: {
+        options: {
+          content: ['build/**/*.php', 'build/**/*.js']
+        },
+        files: {
+          'build/style.css': ['build/style.css']
+        }
+      }
+    },
     uglify: {
       production: {
         files: {
@@ -129,10 +139,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-purgecss');
 
   // Default task - makes a clean build, starts browerSync and watches.
   grunt.registerTask('default', ['clean:all', 'browserSync', 'copy:php','copy:assets', 'uglify', 'less:development', 'watch']);
   // Production task - makesa a clean build, copy to temp folder, compress and remove temp folder.
-  grunt.registerTask('production', ['clean:all', 'copy:php', 'copy:assets', 'uglify', 'less:production', 'copy:dist', 'compress' , 'clean:dist']);
+  grunt.registerTask('production', ['clean:all', 'copy:php', 'copy:assets', 'uglify', 'less:production', 'purgecss:production', 'copy:dist', 'compress' , 'clean:dist']);
 
 };
