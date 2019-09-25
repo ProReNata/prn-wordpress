@@ -23,7 +23,7 @@
 					?>
 
 					<div class="pure-u-1-5">
-						<img src="<?php echo $image['sizes']['thumbnail']; ?>" class="img-circle img-avatar" />
+						<?php printf('<img src="%s" class="img-circle img-avatar" alt="%s" />', $image['sizes']['thumbnail'], $image['alt']); ?>
 					</div>
 
 					<?php

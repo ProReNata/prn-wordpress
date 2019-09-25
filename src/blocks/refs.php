@@ -12,7 +12,7 @@ if( have_rows('references') ):
         // display a sub field value
         $image = get_sub_field('logo');
 
-        printf('<img src="%s" class="refs-logo" />', $image['sizes']['medium'] );
+        printf('<img src="%s" class="refs-logo" alt="%s" />', $image['sizes']['medium'], $image['alt'] );
 
     endwhile;
 
