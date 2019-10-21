@@ -38,15 +38,14 @@ function getCookie(cname) {
   return "";
 }
 
-$(document).on('ready', function() {
-
+$(function() {
   $('.cookieConsent').on('click', function() {
     setCookie('pnr_cookieConsent', true, 365)
     $('.cookieConsent').removeClass('visible')
   })
 
   var cookieConsent = getCookie('pnr_cookieConsent')
-  if (!cookieConsent) {
+  if (cookieConsent === "" || !cookieConsent) {
     $('.cookieConsent').addClass('visible')
   }
 })
