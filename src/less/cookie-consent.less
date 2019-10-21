@@ -1,0 +1,35 @@
+.cookieConsent {
+  font-size: @text-11;
+  line-height: 1rem;
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #00303c;
+  color: @color-light70;
+  padding: .5rem 3rem .5rem 1rem;
+  .hide {
+    cursor: pointer;
+    position: absolute;
+    top: 0rem;
+    right: .5rem;
+    font-size: @text-16;
+    line-height: 2rem;
+    width: 2rem;
+    padding: 0 .75rem;
+    height: 2rem;
+    text-align: center;
+    &:hover {
+      background: @color-s900;
+      color: @color-light100;
+    }
+  }
+  &.visible {
+    bottom: 0;
+  }
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
