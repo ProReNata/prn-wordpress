@@ -60,7 +60,7 @@ const hideContacForm = function() {
 </div>
 
 <div class="cookieConsent">
-  <div class="cookieConsentMessage"><strong>Vi bjuder på kaka!</strong> Kakorna kommer bland annat från Clouflare, en tjänst som hjälper sidan ladda snabbare. Du kan läsa mer om hur vi använder kakor i vår <a href="/integritetspolicy/">Intigritetspolicy</a></div>
+  <div class="cookieConsentMessage"><strong>Vi bjuder på kaka!</strong> Kakorna kommer bland annat från Cloudflare, en tjänst som hjälper sidan ladda snabbare. Du kan läsa mer om hur vi använder kakor i vår <a href="/integritetspolicy/">Intigritetspolicy</a></div>
   <div class="hide"><i class="far fa-times"></i></div>
 </div>
 
