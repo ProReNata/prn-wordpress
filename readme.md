@@ -36,8 +36,6 @@ Shut down the docker images with `docker-compose down`
 
 
 # ToDo
-- [ ] Modules single page _Need info from work group_
-- [ ] Book a demo functions - connect to Trello _Need info from Jens_
 - [ ] 404-page
 - [ ] Add contact info on about page and link to it from footer
 - [ ] Include ACF into theme. [Read more here.](https://www.advancedcustomfields.com/resources/including-acf-within-a-plugin-or-theme/)

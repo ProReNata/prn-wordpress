@@ -18,7 +18,7 @@ get_header(); ?>
 
 $style = "";
 if ( has_post_thumbnail() ) {
-		$style = sprintf("background-image:url('%s'); text-shadow: 0 0 1.5rem rgba(0,0,0,0.3);", get_the_post_thumbnail_url( null, 'large' ));
+		$style = sprintf("background-image:url('%s'); text-shadow: 0 0 1.5rem rgba(0,0,0,0.3);", get_the_post_thumbnail_url( null, 'xlarge' ));
 }
 ?>
 
