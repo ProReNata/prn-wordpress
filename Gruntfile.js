@@ -145,5 +145,6 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['clean:all', 'browserSync', 'copy:php','copy:assets', 'uglify', 'less:development', 'watch']);
   // Production task - makesa a clean build, copy to temp folder, compress and remove temp folder.
   grunt.registerTask('production', ['clean:all', 'copy:php', 'copy:assets', 'uglify', 'less:production', 'purgecss:production', 'copy:dist', 'compress' , 'clean:dist']);
+  grunt.registerTask('debug', ['clean:all', 'copy:php', 'copy:assets', 'uglify', 'less:production', 'purgecss:production']);
 
 };
