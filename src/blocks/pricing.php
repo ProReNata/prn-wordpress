@@ -50,7 +50,7 @@
 			<div class="paper">
 				<h3>Pedagog</h3>
 				<p class="text-muted pricing-single-user-price">
-					<span>-</span>
+					<span>-</span> &nbsp;
 				</p>
 				<p class="text-muted pricing-multi-user-price">
 					<span>195 kr</span> anv/mån
