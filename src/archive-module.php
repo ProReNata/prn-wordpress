@@ -7,7 +7,7 @@
 
   	<div class="page-header">
   	  <div class="page-header-content">
-        <h1 class="text-center">Prorenatas Moduler</h1>
+        <h1 class="text-center">Moduler i Prorenata Journal</h1>
       </div>
     </div>
 
