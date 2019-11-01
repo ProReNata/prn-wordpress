@@ -1,32 +1,49 @@
 .module-card {
-  padding: 0 .75rem;
-  margin-bottom: 2rem;
-  .paper {
-    width: 19rem;
-    border-radius: .25rem;
-    img {
-      width: 100%;
-      height: auto;
-      margin: .5rem auto 1rem;
-      border-radius: .25rem;
-    }
-  }
-
   &-wrapper {
-    margin: 3rem auto;
-    display: flex;
+    margin: 2rem auto 5rem;
     width: 98vw;
     max-width: 1640px;
-    justify-content: center;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+  }
+
+  .paper;
+  position: relative;
+  padding: 1rem 1rem 3rem;
+  margin: .5rem;
+  width: 17rem;
+  min-height: 17rem;
+
+  &-more-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: right;
+    padding: 0.5rem;
+    background-color: @color-s200;
+    border-radius: 0 0 calc(@rounded - 1px) calc(@rounded - 1px);
+  }
+
+  *[class*=fa-] {
+    margin-bottom: 3rem;
+  }
+
+  img {
+    width: calc(17rem - 2px);
+    max-width: none;
+    height: auto;
+    margin: -1rem -1rem 1rem;
+    border-radius: calc(@rounded - 1px) calc(@rounded - 1px) 0 0;
+    display: block;
   }
 }
 
-body.post-type-archive-module {
-  background-color: @color-s500;
-  .page-header {
-    background-color: @color-s700;
-  }
+body.post-type-archive-module, body.post-type-archive-use-case {
+  background-color: @color-s400;
 }
 
 // Slick Slider - used on front page modules block

@@ -47,7 +47,7 @@ article {
   }
 }
 
-aside.modules-list {
+.modules-list {
   max-width: calc(33rem);
   margin-left: auto;
   margin-right: auto;
@@ -67,9 +67,17 @@ aside.modules-list {
     list-style: none;
     padding: 0;
     margin: 0;
+    border-bottom: 1px solid @color-p700;
     li {
       border-top: 1px solid @color-p700;
-      padding: .5rem 1rem;
+      padding: .5rem 1rem .5rem 4rem;
+      position: relative;
+      *[class*=fa] {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        color: @color-dark75;
+      }
       p {
         margin-bottom: .5rem;
       }
@@ -77,5 +85,14 @@ aside.modules-list {
   }
   a {
     color: @color-light100;
+  }
+
+  &-read-more {
+    font-size: @text-14;
+    margin: .5rem 1rem;
+    a {
+      color: @color-dark75;
+      text-decoration: none;
+    }
   }
 }

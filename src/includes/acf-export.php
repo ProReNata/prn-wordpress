@@ -705,6 +705,25 @@ acf_add_local_field_group(array(
 			'default_value' => '',
 			'placeholder' => '',
 		),
+		array(
+			'key' => 'field_5dbc1bc26744a',
+			'label' => 'Icon',
+			'name' => 'icon',
+			'type' => 'text',
+			'instructions' => 'Copy paste icon name from FontAwesome (ex. "fa-adjust")',
+			'required' => 1,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => '',
+		),
 	),
 	'location' => array(
 		array(
