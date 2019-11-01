@@ -14,10 +14,10 @@ if( have_rows('highlights') ):
 				$label = get_sub_field('label');
 				?>
 
-				<div class="pure-u-1-2 pure-u-sm-1-3 pure-u-md-1-4 l-box">
+				<a href="/moduler/" class="pure-u-1-2 pure-u-sm-1-3 pure-u-md-1-4 l-box">
 					<p><i class="<?php echo $icon; ?> fa-2x"></i></p>
 					<p><?php echo $label; ?></p>
-				</div>
+				</a>
 
 				<?php
 
