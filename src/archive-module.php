@@ -22,7 +22,9 @@
        <i class="fad <?php the_field('icon'); ?> fa-2x"></i>
        <h4><?php the_title(); ?></h4>
        <div class="text-small"><?php the_content(); ?></div>
-       <div class="module-card-more-info"><a href="<?php the_field('link'); ?>">Fördjupad information -></a></div>
+       <?php if (get_field('link')) { ?>
+         <div class="module-card-more-info"><a href="<?php the_field('link'); ?>">Fördjupad information -></a></div>
+       <?php } ?>
 
    </div>
  <?php endwhile; ?>

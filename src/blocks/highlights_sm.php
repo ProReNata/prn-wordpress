@@ -30,5 +30,8 @@ else :
 endif;
 
 ?>
+		<div class="pure-u-1-1">
+			<p class="text-center"><a href="/moduler/">Se fler av Prorenatas moduler -></a></p>
+		</div>
 	</div>
 </div>

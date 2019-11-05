@@ -39,8 +39,10 @@
               <i class="fal <?php the_field('icon'); ?> fa-2x"></i>
               <h4><?php the_title(); ?></h4>
               <div class="text-small">
-                <?php the_content(); ?>
-                <p class="text-right letter-spacing-normal"><a href="<?php the_field('link'); ?>">Fördjupad information -></a></p>
+                <?php the_content();
+                if ( get_field('link')) { ?>
+                  <p class="text-right letter-spacing-normal"><a href="<?php the_field('link'); ?>">Fördjupad information -></a></p>
+                <?php } ?>
               </div>
           </li>
         <?php endforeach; ?>
