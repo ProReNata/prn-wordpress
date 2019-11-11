@@ -31,7 +31,7 @@ endif;
 
 ?>
 		<div class="pure-u-1-1">
-			<p class="text-center"><a href="/moduler/">Se fler av Prorenata Journals moduler -></a></p>
+			<p class="text-center"><a href="/funktioner">Se fler av Prorenata Journals funktioner -></a></p>
 		</div>
 	</div>
 </div>

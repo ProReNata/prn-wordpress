@@ -80,8 +80,8 @@ function register_acf_block_types()
     // Modules block
     acf_register_block_type(array(
         'name'              => 'modules',
-        'title'             => __('Modules'),
-        'description'       => __('Lists Modules'),
+        'title'             => __('Functions'),
+        'description'       => __('Lists functions'),
         'render_template'   => 'blocks/modules.php',
         'category'          => 'front-page',
         'icon'              => 'screenoptions',

@@ -29,7 +29,7 @@
   <?php if ( get_field('modules') ) { ?>
     <aside class="bg-s400">
       <div class="section">
-        <h3 class="text-center">Moduler i detta användarfall</h3>
+        <h3 class="text-center">Funktioner i detta användarfall</h3>
       </div>
       <div class="module-card-wrapper">
         <?php
@@ -52,7 +52,7 @@
 
       <div class="section pure-g">
         <div class="pure-u-1-1 text-center">
-          <a href="/moduler/" class="modules-list-read-more">See fler av Prorenata Journals moduler -></a>
+          <a href="/funktioner/" class="modules-list-read-more">See fler av Prorenata Journals funktioner -></a>
         </div>
       </div>
     </aside>

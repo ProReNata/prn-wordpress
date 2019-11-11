@@ -9,7 +9,7 @@
 
   	<div class="page-header bg-s700">
   	  <div class="page-header-content">
-        <h1 class="text-center">Moduler i Prorenata Journal</h1>
+        <h1 class="text-center">Funktioner i Prorenata Journal</h1>
       </div>
     </div>
 

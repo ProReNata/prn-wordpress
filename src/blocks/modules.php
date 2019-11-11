@@ -6,10 +6,10 @@ if( $posts ): ?>
 <div class="bg-s300">
 	<div class="pure-g">
 		<div class="pure-u-1-2 l-box">
-			<span class="strong">Moduler i fokus</span>
+			<span class="strong">Funktioner i fokus</span>
 		</div>
 		<div class="pure-u-1-2 l-box text-right">
-			<a href="/moduler">Se alla moduler -></a>
+			<a href="/funktioner">Se fler funktioner -></a>
 		</div>
 	</div>
 

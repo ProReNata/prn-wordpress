@@ -115,9 +115,8 @@ if( function_exists('acf_add_options_page') ) {
  */
 function wpdocs_codex_module_init() {
     $labels = array(
-        'name'                  => _x( 'Moduler', 'Post type general name', 'textdomain' ),
-        'singular_name'         => _x( 'Modul', 'Post type singular name', 'textdomain' ),
-        'featured_image'        => _x( 'Modulbild', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'textdomain' )
+        'name'                  => _x( 'Funktioner', 'Post type general name', 'textdomain' ),
+        'singular_name'         => _x( 'Funktion', 'Post type singular name', 'textdomain' )
     );
 
     $args = array(
@@ -127,7 +126,7 @@ function wpdocs_codex_module_init() {
         'show_ui'            => true,
         'show_in_menu'       => true,
         'query_var'          => true,
-        'rewrite'            => array( 'slug' => 'moduler' ),
+        'rewrite'            => array( 'slug' => 'funktioner' ),
         'capability_type'    => 'page',
         'has_archive'        => true,
         'hierarchical'       => false,
