@@ -3,7 +3,9 @@
  * The Template for displaying all modules.
  *
  */
- get_header(); ?>
+ get_header();
+
+ $wp_all_query = new WP_Query(array('post_type'=>'module', 'post_status'=>'publish', 'posts_per_page'=>-1, 'orderby'=>'title', 'order'=>'ASC')); ?>
 
   	<div class="page-header bg-s700">
   	  <div class="page-header-content">
@@ -16,7 +18,7 @@
     </article>
 
  <div class="module-card-wrapper">
- <?php while(have_posts()) : the_post();?>
+ <?php while($wp_all_query->have_posts()) : $wp_all_query->the_post();?>
    <div class="module-card">
 
        <i class="fad <?php the_field('icon'); ?> fa-2x"></i>
