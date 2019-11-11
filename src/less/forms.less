@@ -32,12 +32,15 @@ input[type=submit] {
   color: @color-dark100 !important;
 }
 
+/*! purgecss start ignore */
+
 div.wpcf7 {
   margin-bottom: 2rem;
 }
 
 span.wpcf7-not-valid-tip {
-  font-size: 0.707rem;
+  font-size: 0.707rem !important;
+  display: inline !important;
   line-height: 1rem;
   color: @color-danger600;
   background: @color-danger400;
@@ -63,3 +66,5 @@ div.wpcf7-response-output {
 .screen-reader-response {
   display: none;
 }
+
+/*! purgecss end ignore */
