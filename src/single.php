@@ -27,7 +27,7 @@
  	</article>
 
   <?php if ( get_field('modules') ) { ?>
-    <aside class="bg-s500">
+    <aside class="bg-s400">
       <div class="section">
         <h3 class="text-center">Moduler i detta use-case</h3>
       </div>
