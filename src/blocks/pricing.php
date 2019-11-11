@@ -75,7 +75,7 @@
 				<strong>Enanvändarlicenser</strong> kan bara vara kopplade till ett användarkonto, det innebär att varje aktivt användarkonto som ska använda sig av enanvändarlicenser medför en licenskostnad per månad. Vi rekommenderar att denna licensform används för användare som arbetar i systemet flera gånger i veckan eller oftare.
 			</p>
 			<p class="pricing-multi-user-license">
-				<strong>Fleranvändarlicenser</strong> är inte knutna till en specifik användare utan kan delas mellan hur många användare som helst, dock kan bara av en användare i taget vara inloggad. När en användare loggar in så knyts en av organisationens fleranvändarlicenser tillfälligt till kontot och lämnas tillbaka när användaren loggar ut igen. Det främsta användningsområdet är när en organisation har många sällananvändare som använder systemet en eller ett par gånger i veckan eller mer sällan.
+				<strong>Fleranvändarlicenser</strong> är inte knutna till en specifik användare utan kan delas mellan hur många användare som helst, dock bara av en användare i åt gången. När en användare loggar in så knyts en av organisationens fleranvändarlicenser tillfälligt till kontot och lämnas tillbaka när användaren loggar ut igen. Det främsta användningsområdet är när en organisation har många sällananvändare som använder systemet en eller ett par gånger i veckan eller mer sällan.
 			</p>
 			<p>
 				Det går att blanda licensformer vid behov.

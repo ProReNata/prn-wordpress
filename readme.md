@@ -40,3 +40,4 @@ Shut down the docker images with `docker-compose down`
 - [ ] Include ACF into theme. [Read more here.](https://www.advancedcustomfields.com/resources/including-acf-within-a-plugin-or-theme/)
 - [ ] Add color schemes for duo-tones. Duo-primary, duo-secondary, duo-grey, mix, warning, danger, info, success.
 - [ ] Gassel logo etc.
+- [ ] Add CE-logo

@@ -52,7 +52,7 @@
 
       <div class="section pure-g">
         <div class="pure-u-1-1 text-center">
-          <a href="/funktioner/" class="modules-list-read-more">See fler av Prorenata Journals funktioner -></a>
+          <a href="/funktioner/" class="modules-list-read-more">Se fler av Prorenata Journals funktioner -></a>
         </div>
       </div>
     </aside>
