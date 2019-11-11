@@ -40,3 +40,5 @@ Shut down the docker images with `docker-compose down`
 - [ ] Add contact info on about page and link to it from footer
 - [ ] Include ACF into theme. [Read more here.](https://www.advancedcustomfields.com/resources/including-acf-within-a-plugin-or-theme/)
 - [ ] Add color schemes for duo-tones. Duo-primary, duo-secondary, duo-grey, mix, warning, danger, info, success.
+- [ ] Gassel logo etc.
+- [ ] Change modules on use-case page to be grid

@@ -27,29 +27,34 @@
  	</article>
 
   <?php if ( get_field('modules') ) { ?>
-    <aside class="modules-list paper paper-dark">
-      <h3>Läs mer</h3>
-      <?php
-      $posts = get_field('modules');
-      if( $posts ): ?>
-        <ul>
-        <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
-          <?php setup_postdata($post); ?>
-          <li>
-              <i class="fal <?php the_field('icon'); ?> fa-2x fa-fw"></i>
+    <aside class="bg-s500">
+      <div class="section">
+        <h3 class="text-center">Moduler i detta use-case</h3>
+      </div>
+      <div class="module-card-wrapper">
+        <?php
+        $posts = get_field('modules');
+        if( $posts ):
+          foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+            <?php setup_postdata($post); ?>
+            <div class="module-card">
+              <i class="fad <?php the_field('icon'); ?> fa-2x"></i>
               <h4><?php the_title(); ?></h4>
-              <div class="text-small">
-                <?php the_content();
-                if ( get_field('link')) { ?>
-                  <p class="text-right letter-spacing-normal"><a href="<?php the_field('link'); ?>">Fördjupad information -></a></p>
-                <?php } ?>
-              </div>
-          </li>
-        <?php endforeach; ?>
-        </ul>
-        <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-      <?php endif; ?>
-      <p class="modules-list-read-more"><a href="/moduler/">See alla Moduler i Prorenata Journal -></a></p>
+              <div class="text-small"><?php the_content(); ?></div>
+              <?php if (get_field('link')) { ?>
+                <div class="module-card-more-info"><a href="<?php the_field('link'); ?>">Fördjupad information -></a></div>
+              <?php } ?>
+            </div>
+          <?php endforeach;
+          wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+        <?php endif; ?>
+      </div>
+
+      <div class="section pure-g">
+        <div class="pure-u-1-1 text-center">
+          <a href="/moduler/" class="modules-list-read-more">See fler av Prorenata Journals moduler -></a>
+        </div>
+      </div>
     </aside>
   <?php } ?>
 

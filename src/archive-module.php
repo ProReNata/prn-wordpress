@@ -12,8 +12,8 @@
     </div>
 
     <article>
-    <p class="leading text-center">Här är ett urval av alla de funktioner som Prorenata Journal har att erbjuda.</p>
-  </article>
+      <p class="leading text-center">Här är ett urval av alla de funktioner som Prorenata Journal har att erbjuda.</p>
+    </article>
 
  <div class="module-card-wrapper">
  <?php while(have_posts()) : the_post();?>

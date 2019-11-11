@@ -47,52 +47,10 @@ article {
   }
 }
 
-.modules-list {
-  max-width: calc(33rem);
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 3rem;
-  border-radius: .25rem;
-  border: 1px solid @color-p900;
-  padding: 0;
-  box-shadow: @shadow;
-  background: @color-p500;
-  color: @color-dark100;
-
-  h3 {
-    padding: 1rem;
-    margin: 0;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    border-bottom: 1px solid @color-p700;
-    li {
-      border-top: 1px solid @color-p700;
-      padding: .5rem 1rem .5rem 4rem;
-      position: relative;
-      *[class*=fa] {
-        position: absolute;
-        top: 1rem;
-        left: 0.75rem;
-        color: @color-dark75;
-      }
-      p {
-        margin-bottom: .5rem;
-      }
-    }
-  }
-  a {
+a.modules-list-read-more {
+  color: @color-light70;
+  text-decoration: underline;
+  &:hover {
     color: @color-light100;
-  }
-
-  &-read-more {
-    font-size: @text-14;
-    margin: .5rem 1rem;
-    a {
-      color: @color-dark75;
-      text-decoration: none;
-    }
   }
 }
