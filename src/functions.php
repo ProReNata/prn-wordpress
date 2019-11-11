@@ -56,7 +56,6 @@ function remove_jquery_migrate($scripts)
         }
     }
 }
-
 add_action('wp_default_scripts', 'remove_jquery_migrate');
 
 function stop_heartbeat() {
@@ -71,6 +70,14 @@ function wpdocs_dequeue_dashicon() {
   wp_deregister_style('dashicons');
 }
 add_action( 'wp_enqueue_scripts', 'wpdocs_dequeue_dashicon' );
+
+
+// Remove the posts-option in the admin menu.
+function post_remove () {
+   remove_menu_page('edit.php');
+	 remove_menu_page('edit-comments.php');
+}
+add_action('admin_menu', 'post_remove');
 
 
 // Add the Advamced Custom Fields settings from file
