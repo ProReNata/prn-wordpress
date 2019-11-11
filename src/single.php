@@ -36,7 +36,7 @@
         <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
           <?php setup_postdata($post); ?>
           <li>
-              <i class="fal <?php the_field('icon'); ?> fa-2x"></i>
+              <i class="fal <?php the_field('icon'); ?> fa-2x fa-fw"></i>
               <h4><?php the_title(); ?></h4>
               <div class="text-small">
                 <?php the_content();
