@@ -55,7 +55,7 @@
 				<p class="text-muted pricing-multi-user-price">
 					<span>195 kr</span> anv/mån
 				</p>
-				<p class="text-small">Pedagogisk licens ger bara tillgång till Lorem ipsum dolor sit amet och finns bara som fleranvändarlicens.</p>
+				<p class="text-small">Pedagogisk licens är ett kostnadseffektivt sätt att ge pedagoger i skolan tillgång till Prorenata Journal.</p>
 			</div>
 		</div>
 
