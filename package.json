@@ -12,11 +12,11 @@
   "author": "Alfred Beckman",
   "license": "ISC",
   "devDependencies": {
-    "@prorenata/style-config": "git+ssh://git@github.com/ProReNata/style-config.git#v1.0.4",
+    "@prorenata/style-config": "git+ssh://git@github.com/ProReNata/style-config.git#1.1.0",
     "grunt": "^1.0.4",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-compress": "^1.5.0",
+    "grunt-contrib-compress": "^1.6.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-less": "^2.0.0",
     "grunt-contrib-uglify": "^4.0.1",
@@ -24,7 +24,7 @@
     "grunt-purgecss": "^1.0.0",
     "less-plugin-autoprefix": "^2.0.0",
     "less-plugin-clean-css": "^1.5.1",
-    "purecss": "^1.0.0",
+    "purecss": "^1.0.1",
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {}
