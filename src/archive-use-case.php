@@ -14,7 +14,7 @@
  <div class="module-card-wrapper">
  <?php while(have_posts()) : the_post();?>
    <div class="module-card">
-     <?php the_post_thumbnail( null, 'medium' ); ?>
+     <?php the_post_thumbnail( 'medium' ); ?>
      <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
      <div class="text-small"><?php the_field('summary'); ?></div>
      <div class="module-card-more-info"><a href="<?php the_permalink( ); ?>">Läs mer -></a></div>
