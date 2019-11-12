@@ -26,13 +26,34 @@ Run Grunt with `grunt` to start file watcher and browser sync.
 
 Shut down the docker images with `docker-compose down`
 
+# Deploy to staging
+
+To push to staging you have to create a `.ftpauth` file in the project root folder with the FTP credentials to the staging server.
+
+```(json)
+{
+    "webStaging":{
+        "username":"username",
+        "password":"password"
+    }
+}
+```
+
+Then just run `grunt staging` to build and upload to staging.
+
+The production website is updated by deploying the staging website via the Siteground control panel.
+
+# Other Grunt tasks
+
+`grunt build` builds a production version into the build folder
+
+`grunt zip` builds and compresses a zip that can be uploaded via the Wordpress admin interface.
 
 # WP Plugins we use
 - Advanced Custom Fields PRO
 - Contact Form 7
 - Smush (Image optimization)
-- SVG Support
-- W3 Total Cache
+- Safe SVG
 
 
 # ToDo

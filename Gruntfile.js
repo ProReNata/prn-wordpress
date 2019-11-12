@@ -54,6 +54,24 @@ module.exports = function(grunt) {
         ]
       }
     },
+    ftp_push: {
+      staging: {
+        options: {
+          authKey: "webStaging",
+      	  host: "prorenata.se",
+      	  dest: "/staging3.prorenata.se/public_html/wp-content/themes/",
+          port: 21,
+          incrementalUpdates: true
+        },
+        files: [
+          {
+            expand: true,
+            cwd: 'build',
+            src: ['**/*'],
+            dest: 'prn-wp-theme/' }
+        ]
+      }
+    },
     less: {
       development: {
         options: {
@@ -139,12 +157,16 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-ftp-push');
   grunt.loadNpmTasks('grunt-purgecss');
 
   // Default task - makes a clean build, starts browerSync and watches.
   grunt.registerTask('default', ['clean:all', 'browserSync', 'copy:php','copy:assets', 'uglify', 'less:development', 'watch']);
-  // Production task - makesa a clean build, copy to temp folder, compress and remove temp folder.
-  grunt.registerTask('production', ['clean:all', 'copy:php', 'copy:assets', 'uglify', 'less:production', 'purgecss:production', 'copy:dist', 'compress' , 'clean:dist']);
-  grunt.registerTask('debug', ['clean:all', 'copy:php', 'copy:assets', 'uglify', 'less:production', 'purgecss:production']);
+  // Build task - builds a production version of the theme
+  grunt.registerTask('build', ['clean:all', 'copy:php', 'copy:assets', 'uglify', 'less:production', 'purgecss:production']);
+  // Zip task - makes a clean build, copy to temp folder, compress and remove temp folder.
+  grunt.registerTask('zip', ['clean:all', 'copy:php', 'copy:assets', 'uglify', 'less:production', 'purgecss:production', 'copy:dist', 'compress' , 'clean:dist']);
+  // Staging task - makes a clean build and uploads to staging server.
+  grunt.registerTask('staging', ['clean:all', 'copy:php', 'copy:assets', 'uglify', 'less:production', 'purgecss:production', 'ftp_push:staging'])
 
 };
