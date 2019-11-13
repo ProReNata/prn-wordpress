@@ -38,6 +38,12 @@ function getCookie(cname) {
   return "";
 }
 
+/**
+  * Cookie Information Bar
+  * Author: Alfred Beckman, Prorenata
+  * NOT USED
+  */
+/*
 $(function() {
   $('.cookieConsent').on('click', function() {
     setCookie('pnr_cookieConsent', true, 365)
@@ -49,3 +55,4 @@ $(function() {
     $('.cookieConsent').addClass('visible')
   }
 })
+*/
