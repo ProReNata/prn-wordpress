@@ -6,10 +6,6 @@ Description:
 Version: 1.0
 */
 
-
-/*  TODO: Import fonts from our own S3
- *  But this needs some love to work: https://coderwall.com/p/ub8zug/serving-web-fonts-via-aws-s3-and-cloudfront
- **/
 @import "https://d1lqm4rwofv7kw.cloudfront.net/v2/fonts/Inter/inter.css";
 
 @import (less) "../node_modules/@prorenata/style-config/css/output.css";
@@ -71,13 +67,6 @@ h2, h3, h4, h5, h6 ,p {
 h5 {
   color: @color-p700;
 }
-hr.wp-block-separator {
-  width: 15rem;
-  margin: 2rem auto 3rem;
-  background: @color-s500;
-  height: 2px;
-  border-radius: 4px;
-}
 .strong {
   font-weight: 700;
 }
@@ -136,3 +125,4 @@ hr.wp-block-separator {
 @import "less/navigation";
 @import 'less/pricing';
 @import 'less/cookie-consent';
+@import 'less/wp';
