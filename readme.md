@@ -59,7 +59,4 @@ The production website is updated by deploying the staging website via the Siteg
 # ToDo
 - [ ] Include ACF into theme. [Read more here.](https://www.advancedcustomfields.com/resources/including-acf-within-a-plugin-or-theme/)
 - [ ] Add color schemes for duo-tones. Duo-primary, duo-secondary, duo-grey, mix, warning, danger, info, success.
-- [ ] Gassel logo etc.
 - [ ] Add CE-logo
-- [ ] Read font from S3 instead
-- [ ] Add FTP upload support to Grunt
