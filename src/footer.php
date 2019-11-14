@@ -26,7 +26,7 @@
 
       <?php
       if ( get_field('privacy_page', 'option') ) {
-        printf('| <a href="%s">Intigritetspolicy</a>', get_field('privacy_page', 'option'));
+        printf('| <a href="%s">Integritetspolicy</a>', get_field('privacy_page', 'option'));
       } ?>
 
     </div>
