@@ -9,13 +9,13 @@
 
  	<div class="page-header">
  	  <div class="page-header-content">
- 			<h1 style="font-size: 35vw; line-height: 35vw;">404</h1>
+      <img src="<?php echo get_template_directory_uri()?>/assets/404.svg">
  		</div>
  	</div>
 
  	<article class="text-center">
-    <h2>Sidan kunde inte hittas</h2>
- 		<p class="leading">Kontrollera URL:en och<br/><a href="mailto:info@prorenata.se">kontakta oss</a> om felet kvarstår.</p>
+    <h3>Sidan kunde inte hittas</h3>
+ 		<p class="">Kontrollera URL:en och <a href="mailto:info@prorenata.se">kontakta oss</a> om felet kvarstår.</p>
  	</article>
 
  <?php get_footer(); ?>
