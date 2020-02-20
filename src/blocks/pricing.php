@@ -24,10 +24,10 @@
 			<div class="paper">
 				<h3>Standard</h3>
 				<p class="text-muted pricing-single-user-price">
-					<span>440 kr</span> anv/mån
+					<span>440 kr</span> anv  / mån
 				</p>
 				<p class="text-muted pricing-multi-user-price">
-					<span>880 kr</span> anv/mån
+					<span>880 kr</span> licens  / mån
 				</p>
 				<p class="text-small">Standardlicenserna är giltiga för samtliga användare oavsett användningsområde, journalföringsplikt, etc.</p>
 			</div>
@@ -37,10 +37,10 @@
 			<div class="paper">
 				<h3>EHT</h3>
 				<p class="text-muted pricing-single-user-price">
-					<span>220 kr</span> anv/mån
+					<span>220 kr</span> anv  / mån
 				</p>
 				<p class="text-muted pricing-multi-user-price">
-					<span>440 kr</span> anv/mån
+					<span>440 kr</span> licens  / mån
 				</p>
 				<p class="text-small">EHT-licenser får bara användas till icke-medicinsk personal som är kopplad till ett elevhälsoteam för en skola.</p>
 			</div>
@@ -53,7 +53,7 @@
 					<span>-</span> &nbsp;
 				</p>
 				<p class="text-muted pricing-multi-user-price">
-					<span>220 kr</span> anv/mån
+					<span>220 kr</span> licens  / mån
 				</p>
 				<p class="text-small">Pedagogisk licens är ett kostnadseffektivt sätt att ge pedagoger i skolan tillgång till Prorenata Journal.</p>
 			</div>
