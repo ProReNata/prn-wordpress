@@ -37,13 +37,21 @@ article {
     padding-left: calc(5vw + 2rem);
   }
   h3 {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
   > .section:first-child {
     margin-top: -3rem;
   }
   > .section:last-child {
     margin-bottom: -3rem;
+  }
+  .post-divider {
+    width: 100%;
+    max-width: 33rem;
+    margin: 3rem auto 2rem;
+    border: none;
+    background: @color-s500;
+    height: 1px;
   }
 }
 
@@ -52,5 +60,18 @@ a.modules-list-read-more {
   text-decoration: underline;
   &:hover {
     color: @color-light100;
+  }
+}
+
+
+.post-nav {
+  &-container {
+    max-width: 33rem;
+    width: 95%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-weight: 500;
   }
 }

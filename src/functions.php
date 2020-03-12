@@ -72,14 +72,6 @@ function wpdocs_dequeue_dashicon() {
 add_action( 'wp_enqueue_scripts', 'wpdocs_dequeue_dashicon' );
 
 
-// Remove the posts-option in the admin menu.
-function post_remove () {
-   remove_menu_page('edit.php');
-	 remove_menu_page('edit-comments.php');
-}
-add_action('admin_menu', 'post_remove');
-
-
 // Add the Advamced Custom Fields settings from file
 include 'includes/acf.php';
 
