@@ -37,13 +37,26 @@
 const showContacForm = function() {
   document.querySelector('#contact-form').classList.add('isActive');
   document.querySelector('body').classList.add('drawer-open');
+  window.history.pushState('Contact',null,location.href + '#kontakt')
   return false;
 }
 const hideContacForm = function() {
   document.querySelector('#contact-form').classList.remove('isActive');
   document.querySelector('body').classList.remove('drawer-open');
+  var baseUrl = location.protocol+'//'+
+    location.hostname+
+   (location.port?":"+location.port:"")+
+    location.pathname+
+   (location.search?location.search:"");
+  window.history.pushState('Contact',null,baseUrl);
   return false;
 }
+
+window.addEventListener('hashchange', function(e){
+  if (e.newURL.search('#') == -1) {
+    hideContacForm();
+  }
+})
 </script>
 
 <div class="drawer" id="contact-form">
