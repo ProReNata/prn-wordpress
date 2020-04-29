@@ -183,3 +183,6 @@ function fa_icon_shortcode( $atts ) {
 	return sprintf('<i class="%s fa-%s"></i>', $atts['prefix'], $atts['name']);
 }
 add_shortcode( 'fa', 'fa_icon_shortcode' );
+
+
+add_theme_support( 'responsive-embeds' );
