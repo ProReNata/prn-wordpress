@@ -46,23 +46,23 @@
 			</div>
 		</div>
 
-		<div class="pricing-column l-box pure-u-1-1 pure-u-sm-1-3">
+		<div class="pricing-column l-box pure-u-1-1 pure-u-sm-1-3 pricing-multi-user-price">
 			<div class="paper">
 				<h3>Pedagog</h3>
-				<p class="text-muted pricing-single-user-price">
-					<span>-</span> &nbsp;
-				</p>
-				<p class="text-muted pricing-multi-user-price">
+				<p class="text-muted">
 					<span>220 kr</span> licens  / mån
 				</p>
 				<p class="text-small">Pedagogisk licens är ett kostnadseffektivt sätt att ge pedagoger i skolan tillgång till Prorenata Journal.</p>
 			</div>
 		</div>
+		<div class="pricing-column l-box pure-u-1-1 pure-u-sm-1-3 pricing-single-user-price prn-show-sm">
+			<p class="text-small text-muted" style="margin-top: 8rem;">Pedagogisk licens finns bara som <a onClick="pricingFor(0);" style="cursor: pointer">Fleranvändarlicens</a>.</p>
+		</div>
 
 		<div class="pure-u-1-1 text-center">
 			<div class="switch">
 				<div class="switch-option pricing-single-user-switch " onClick="pricingFor(1);">
-					Enanvändarlicens
+					Enanvändarlicens 
 				</div>
 				<div class="switch-option pricing-multi-user-switch" onClick="pricingFor(0);">
 					Fleranvändarlicens
