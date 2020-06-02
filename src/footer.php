@@ -22,14 +22,13 @@
   </div>
   <div class="pure-g">
     <div class="pure-u-1-1 l-box text-small">
-      Copyright &copy; 2019 Prorenata AB
+      <img src="<?php echo get_template_directory_uri()?>/assets/di-gasell-webb-white.svg" class="footer-gasell">
 
+      Copyright &copy; 2019 Prorenata AB
       <?php
       if ( get_field('privacy_page', 'option') ) {
         printf('| <a href="%s">Integritetspolicy</a>', get_field('privacy_page', 'option'));
       } ?>
-
-      <img src="<?php echo get_template_directory_uri()?>/assets/di-gasell-webb-white.svg" class="footer-gasell">
 
     </div>
   </div>
