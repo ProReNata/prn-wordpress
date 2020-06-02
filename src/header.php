@@ -22,6 +22,9 @@
 <meta name="msapplication-config" content="<?php echo get_template_directory_uri()?>/assets/icons/browserconfig.xml">
 <meta name="theme-color" content="#E5EBEE">
 
+<meta property="og:logo" sizes="180x180" href="<?php echo get_template_directory_uri()?>/assets/icons/apple-touch-icon.png">
+<meta property="og:logo" sizes="32x32" href="<?php echo get_template_directory_uri()?>/assets/icons/favicon-32x32.png">
+
 <script src="https://kit.fontawesome.com/89c5779e5f.js"></script>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
 <?php wp_head(); ?>
