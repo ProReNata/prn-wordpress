@@ -29,6 +29,8 @@
         printf('| <a href="%s">Integritetspolicy</a>', get_field('privacy_page', 'option'));
       } ?>
 
+      <img src="<?php echo get_template_directory_uri()?>/assets/di-gasell-webb-white.svg" class="footer-gasell">
+
     </div>
   </div>
 </footer>
