@@ -24,6 +24,14 @@
     <div class="pure-u-1-1 l-box text-small">
       <img src="<?php echo get_template_directory_uri()?>/assets/di-gasell-webb-white.svg" class="footer-gasell">
 
+      <a href="https://upplysningar.syna.se/Sigill/Detail/100920" target="_blank">
+        <img
+          style="height: 4rem; width: auto; float: right; display: block; margin-top: -1rem; margin-right: 1rem;"
+          alt="Sigillet är utfärdat av kreditupplysningsföretaget AB Syna www.syna.se"
+          title="Sigillet är utfärdat av kreditupplysningsföretaget AB Syna"
+          src="https://sigill.syna.se/sigill/app/DBSeal.php?cid=100920&sealtype=stor"/>
+      </a>
+
       Copyright &copy; 2019 Prorenata AB
       <?php
       if ( get_field('privacy_page', 'option') ) {
