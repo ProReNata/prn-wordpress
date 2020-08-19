@@ -4,6 +4,7 @@
   "description": "A Wordpress theme for Prorenata",
   "main": "index.js",
   "scripts": {
+    "dev": "grunt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
